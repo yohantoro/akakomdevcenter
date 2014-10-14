@@ -1,0 +1,22 @@
+/*  ####################################################   PROGRAMMING   ################################################## */
+.csharpSdk { background-image: url(../gambar/programming/csharp-hover.png); background-repeat: repeat; background-position: left top }
+.csharpSdk a, .csharpSdk a:link, .csharpSdk a:visited { display: block; width: 85px; height: 85px }
+.csharpSdk a:hover img { visibility: hidden }
+.html5Sdk { background-image: url(../gambar/programming/html5-hover.png); background-repeat: repeat; background-position: left top }
+.html5Sdk a, .html5Sdk a:link, .html5Sdk a:visited { display: block; width: 85px; height: 85px }
+.html5Sdk a:hover img { visibility: hidden }
+.j2meSdk { background-image: url(../gambar/programming/j2me-hover.png); background-repeat: repeat; background-position: left top }
+.j2meSdk a, .j2meSdk a:link, .j2meSdk a:visited { display: block; width: 85px; height: 85px }
+.j2meSdk a:hover img { visibility: hidden }
+.javaSdk { background-image: url(../gambar/programming/java-hover.png); background-repeat: repeat; background-position: left top }
+.javaSdk a, .javaSdk a:link, .javaSdk a:visited { display: block; width: 85px; height: 85px }
+.javaSdk a:hover img { visibility: hidden }
+.jsSdk { background-image: url(../gambar/programming/js-hover.png); background-repeat: repeat; background-position: left top }
+.jsSdk a, .jsSdk a:link, .jsSdk a:visited { display: block; width: 85px; height: 85px }
+.jsSdk a:hover img { visibility: hidden }
+.phpSdk { background-image: url(../gambar/programming/php-hover.png); background-repeat: repeat; background-position: left top }
+.phpSdk a, .phpSdk a:link, .phpSdk a:visited { display: block; width: 85px; height: 85px }
+.phpSdk a:hover img { visibility: hidden }
+.rubySdk { background-image: url(../gambar/programming/ruby-hover.png); background-repeat: repeat; background-position: left top }
+.rubySdk a, .rubySdk a:link, .rubySdk a:visited { display: block; width: 85px; height: 85px }
+.rubySdk a:hover img { visibility: hidden }

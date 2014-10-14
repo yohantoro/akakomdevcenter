@@ -1,0 +1,2712 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Akakom Dev Center</title>
+<!-- Basic -->
+   <meta charset="utf-8">
+   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+   <meta name="Description" content="Free tutorials and reference for Desktop, Game, Mobile and Web Development"/>
+   <meta name="Keywords" content="ADC, AKAKOM, Akakom Dev Center, STMIK AKAKOM, Moduul, Article, Latest, Technologies, Free,  Tutorials, References, Examples"/>
+   <meta name="author" content="Akakom Dev Center">
+   <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+<!-- Web Fonts  -->
+   <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
+<!-- CSS -->
+   <link rel="stylesheet" href="theme/css/fonts/font-awesome/css/font-awesome.css">
+   <link rel="stylesheet" href="theme/css/custom.css"/>
+   <link rel="stylesheet" href="theme/css/theme-responsive.css" />
+   <link rel="stylesheet" type="text/css" href="theme/colorbox.css" />
+   <link rel="stylesheet" type="text/css" href="theme/prettify.css" />
+   <link rel="stylesheet" href="scripts/style_appwarp.css"/>
+   <link rel="stylesheet" href="scripts/main_home.css"/>
+   <link rel="stylesheet" href="scripts/showcase.css"/>
+   <link rel="stylesheet" type="text/css" href="scripts/main.css" />
+  <link rel="stylesheet" type="text/css" href="scripts/liquid.css" />
+  <link rel="stylesheet" type="text/css" href="scripts/navigation.css" />
+
+  <script type="text/javascript"> 
+    $(document).ready(function(){
+      $("nav ul li").hover(function() {
+        $(this).addClass("active");
+        $(this).find("ul").show().animate({opacity: 1}, 500);
+        },function() {
+        $(this).find("ul").hide().animate({opacity: 0}, 300);
+        $(this).removeClass("active");
+      });
+      $('nav ul li:first-child').addClass('first');
+      $('nav ul li:last-child').addClass('last');
+      $('nav ul li ul').parent().append('<span class="dropdown"></span>').addClass('drop');
+      jQuery(' #da-thumbs > li ').each( function() { jQuery(this).hoverdir(); } );
+    });
+  </script>
+
+<!-- JS -->
+   <script type="text/javascript" src="scripts/main.js"></script>
+  <script type="text/javascript" src="scripts/jquery-1.2.6.min.js"></script>
+  <script type="text/javascript" src="scripts/jquery.jparallax.js"></script>
+  <script type="text/javascript" src="scripts/virtualpaginate.js"></script>
+  <script src="scripts/jquery.slicknav.js"></script> 
+  <script>
+      var jq=$.noConflict();jq(document).ready(function(){jq(".parallax").jparallax({});jq(".app_img").click(function(){jq(".app_box").hide();jq(this).parent().next().next().show()});jq(".closediv").click(function(){jq(".app_box").hide()})})
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('#menu').slicknav();
+    });
+  </script>
+   <script type="text/javascript" src="theme/prettify.js"></script>
+   <script src="theme/vendor/modernizr.js"></script>
+<!-- CSS related changes -->
+   <style>
+      div.feature-box div.feature-box-icon,
+      .col-md-3 .course-box, header nav ul.nav-main ul.dropdown-menu, 
+      nav.mega-menu .mega-menu-signin .dropdown-menu li, footer div.footer-ribon, div.footer-copyright, 
+      li.heading, header nav ul.nav-main li.dropdown:hover a {
+         background-color: #202020 !important;
+      }
+      .selected-reading-boxes .col-md-3 .course-box{
+        background-color: transparent !important;
+      }
+      img.mobile-apps {
+         border: 1px solid #202020 !important;
+      }
+      footer ul.list li{
+         background: none !important;
+         padding: 0px;
+      }
+      p a, footer i.icon, footer ul.list.icons li i {
+         color: #FFF !important;
+      }
+   </style>
+</head>
+
+<body onload="prettyPrint()">
+<div class="body">
+
+<!-- HEADER -->
+   <header>
+      <div class="container">
+   <!-- Logo -->
+         <h1 class="logo">
+            <a href="index.html">
+               <img alt="Akakom Dev Center" src="images/logo.png">
+            </a>
+         </h1>
+   <!-- Search -->
+         <div class="search">
+               <form method="get" id="searchform" name="searchform" action="http://www.google.com/search">
+                  <input type="hidden" name="sitesearch" value=""/>
+                  <div class="input-group">
+                        <input type="text" class="form-control search" name="q" id="q" placeholder="Search your tutorials..." onfocus="if (this.value == 'Search your tutorials...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search your tutorials...';}"/>
+                        <!-- 
+                        <input value="FORID:11" name="cof" type="hidden"/>
+                        <input type="hidden" name="ie" value="ISO-8859-1" />
+                        --> 
+                        <span class="input-group-btn">
+                          <button class="btn btn-default" type="submit"></button>
+                        </span>
+                  </div>
+               </form>
+         </div>
+   <!-- Social Icons -->
+         <div class="social-icons">
+            <ul class="social-icons">
+               <li class="facebook"><a href="http://www.facebook.com/akakomdevcenter" target="_blank" title="Facebook">Facebook</a></li>
+               <li class="twitter"><a href="http://www.twitter.com/akakomdevcenter" target="_blank" title="Twitter">Twitter</a></li>
+               <li class="rss"><a href="http://feeds.feedburner.com/akakomdevcenter" target="_blank" title="RSS">RSS</a></li>
+            </ul>
+         </div>
+   <!-- Navigation -->
+         <nav>
+            <ul class="nav nav-pills nav-top">
+               <li><a href="#">FORUMS</a></li>
+               <li><a href="#">AKAKOM</a></li>
+               <li><a href="#">SITEMAPS</a></li>
+            </ul>
+         </nav>
+   <!-- Button -->
+         <button class="btn btn-responsive-nav btn-inverse" data-toggle="collapse" data-target=".nav-main-collapse" id="pull">
+            <i class="icon icon-bars"></i>
+         </button>
+      </div>
+<!-- MENUS -->
+   <div class="navbar-collapse nav-main-collapse collapse">
+      <div class="container">
+         <nav class="nav-main mega-menu">
+            <ul class="nav nav-pills nav-main" id="mainMenu">
+               <li class="dropdown"><a class="dropdown" href="index.html">Home</a></li>   
+               <li class="dropdown"><a class="dropdown" href="artikel.html">Articles</a></li>
+               <li class="dropdown"><a class="dropdown" href="tutorial.html">Tutorilas</a></li>
+               <li class="dropdown"><a class="dropdown" href="modul.html">Modules</a></li>
+               <li class="dropdown"><a class="dropdown" href="showcase.html">Showcases</a></li>
+               <li class="dropdown"><a class="dropdown" href="event.html">Events</a></li>
+               <li class="dropdown mega-menu-item mega-menu-signin signin" id="headerAccount">
+                  <a class="dropdown-toggle" href="#">More</a>
+                  <ul class="dropdown-menu">
+                     <li><a href="programming.html" title="Desktop Development">Desktop Development</a></li>
+                     <li><a href="programming.html" title="Game Development">Game Development</a></li>
+                     <li><a href="programming.html" title="Mobile Development">Mobile Development</a></li>
+                     <li><a href="programming.html" title="Web Development">Web Development</a></li>
+                     <li><a href="programming.html" title="Multimedia">Multimedia</a></li>
+                  </ul>
+               </li>
+            </ul>
+         </nav>
+      </div>
+   </div>
+   </header>
+
+</div>
+
+<!-- ##################################################   CONTAINER   ##################################################-->
+<div class="row center">
+    <div class="showecase_bg">
+      <div class="header_inner">
+        <div class="header_main">
+          <div class="parallax" >
+            <div class="app1"></div>
+            <div class="app2"></div>
+            <div class="app3"></div>
+          </div>
+          <div class="laptop"> <img src="images/laptop_heading.png" alt="ADC Games and Apps Showcase" width="453" height="229"> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row center">
+    <hr class="tall" />
+  </div>
+  <div class="ShepHertz_body_container">
+    <div class="ShepHertz_body_inner">
+      <div class="ShepHertz_body nomarginT">
+        <!-- ##############################################    SHOWCASE    ##############################################-->
+      <div class="virtualpage hidepiece" style="display: block;" id="firstPage">
+        <div class="appstoreWrapper">
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/dark-lands.png" alt="Dark Lands" class="app_img"> </div>
+            <div class="title">
+              <h4>Dark Lands</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/dark-lands.png"  title="Dark Lands" alt="Dark Lands"></div>
+                <div class="app-name">Dark Lands</div>
+                <div class="apps-links">
+                  <div class="apps-link"> <a class="apps-link-itunes" href="https://itunes.apple.com/nz/app/dark-lands/id834858768" target="_blank"></a> <a class="apps-link-play" href="https://play.google.com/store/apps/details?id=com.bulkypix.darklands" target="_blank"></a> <a class="apps-link-windows" href="http://www.windowsphone.com/en-us/store/app/dark-lands/d006e5c7-731f-4e06-8807-ed119999ccfc" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">"[...] Dark Lands comes with a bold, moody, silhouetted visual aesthetic". 4/5 148Apps
+                  "The inclusion of combat into a side scroller/runner style game serves to add a depth to the game [...]". 8,5/10...</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/gravitire_hd.png" alt="Gravitire 3D HD" > </div>
+            <div class="title">
+              <h4>Gravitire 3D HD</h4>
+            </div>
+            <div class="appPopUp_div app_box" style="display: none;">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="Gravitire 3D HD" title="Gravitire 3D HD" src="gambar/karya/gravitire_hd.png"></div>
+                <div class="app-name">Gravitire 3D HD</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a target="_blank" href="https://itunes.apple.com/app/gravitire-3d-hd/id543516487?mt=8" class="apps-link-itunes"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">GraviTire 3D HD is a challenging game that gives you an opportunity to have fun while rolling a tire on up and down a road. The setting of GraviTire 3D HD is an environment where the main attribute is the rode where players roll their tires. . .</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/ben_10.png" alt="Ben10 Galactic Getaway" > </div>
+            <div class="title">
+              <h4>Ben 10 Galactic Getaway</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="Ben 10 Galactic Getaway" title="Ben 10 Galactic Getaway" src="gambar/karya/ben_10.png"></div>
+                <div class="app-name">Ben 10 Galactic Getaway</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a target="_blank" href="https://play.google.com/store/apps/details?id=com.jumpgames.ben10galacticg.main" class="apps-link-play"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Alien Kraab has kidnapped Gwen and taken her to his galaxy. Ben has tracked down the planet, but the Omnitrix is malfunctioning and the only form Ben can transform into is Heatblast. . .</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/real-drift-car-racing.png" alt="Real Drift Car Racing" > </div>
+            <div class="title">
+              <h4>Real Drift Car Racing</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="Real Drift Car Racing" title="Real Drift Car Racing" src="gambar/karya/real-drift-car-racing.png"></div>
+                <div class="app-name">Real Drift Car Racing</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a target="_blank" href="https://play.google.com/store/apps/details?id=com.realdrift.sipon&hl=en" class="apps-link-play"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">With more than 6 millions of fan players worldwide, Real Drift Car Racing is the most realistic 3D drift racing simulation on mobile devices, and yet easy to control and fun to play thanks to an innovative drift helper...</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/combat.png" alt="Combat with Dead War Bugs"  class="app_img"> </div>
+            <div class="title">
+              <h4>Combat with Dead War Bugs</h4>
+            </div>
+            <div class="appPopUp_div app_correct2 app_box">
+              <div class="apps-overlay apps-overlay-open rightside">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/combat.png"  title="Combat with Dead War Bugs" alt="Combat with Dead War Bugs"></div>
+                <div class="app-name">Combat with Dead War Bugs</div>
+                <div class="apps-links" >
+                  <div class="apps-link"><a class="apps-link-windows" href="http://www.windowsphone.com/en-us/store/app/combat-with-dead-war-bugs-trigger-modern-wrath/14496850-d0ec-4718-88dd-c309f37f1349" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Kill undead bugs in highly anticipated modern shooter on Mars. Take your four ultimate machine guns & bring the wrath upon their heads. Left by your squad alone on distant planet fight with endless wave of your enemies - deadly space spiders... </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="appstoreWrapper">
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/dhoom_3.png" alt="Dhoom3"> </div>
+            <div class="title">
+              <h4>Dhoom:3</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="Dhoom:3" title="Dhoom:3" src="gambar/karya/dhoom_3.png" ></div>
+                <div class="app-name">Dhoom:3</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a target="_blank" href="http://store.ovi.com/content/395689?clickSource=browse&amp;categoryId=1&amp;contentArea=games&amp;pos=1" class="apps-link-j2me"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">For all the fans of Dhoom franchise, here is the first in the series, action packed, thriller Dhoom:3 The Game. Don the cape of the Dhoom:3 movie anti-hero and zoom through the streets of Chicago on your Super Bike. . .</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/empires-of-sand.png" alt="Empires of Sand"> </div>
+            <div class="title">
+              <h4>Empires of Sand</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="Empires of Sand" title="Empires of Sand" src="gambar/karya/empires-of-sand.png" ></div>
+                <div class="app-name">Empires of Sand</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a target="_blank" href="https://itunes.apple.com/ca/app/empires-of-sand/id815552376" class="apps-link-itunes"></a><a target="_blank" href="https://play.google.com/store/apps/details?id=com.codigames.empiresofsand" class="apps-link-play"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Empires of Sand represents a step ahead in the strategy game genre, combining management and tower defense. Defend your base against enemy attack while you send your troops out to finish off your opponents... . .</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/scopa.png" alt="Scopa"> </div>
+            <div class="title">
+              <h4>Scopa</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img title="Scopa" src="gambar/karya/scopa.png" alt="Scopa"></div>
+                <div class="app-name">Scopa</div>
+                <div class="apps-links">
+                  <div class="apps-link"> <a target="_blank" href="https://itunes.apple.com/app/id827784354" class="apps-link-itunes"></a> <a target="_blank" href="https://play.google.com/store/apps/details?id=com.WhatWapp.Scopa" class="apps-link-play"></a> </div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">WhatWapp Entertainment is really pleased to present you the new "Scopa", the most famous italian card game!
+                  Completely renewed graphics, incredibly realistic animations, new sound effects, but most important... new functionalities!</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/real-drift-car-racing-free.png" alt="Real Drift Car Racing" > </div>
+            <div class="title">
+              <h4>Real Drift Car Racing Free</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="Real Drift Car Racing" title="Real Drift Car Racing" src="gambar/karya/real-drift-car-racing-free.png"></div>
+                <div class="app-name">Real Drift Car Racing Free</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a target="_blank" href="https://play.google.com/store/apps/details?id=com.realdriftportnew.sipon&hl=en" class="apps-link-play"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Real Drift Car Racing full version: https://play.google.com/store/apps/details?id=com.realdrift.sipon<br>
+                  With more than 6 millions of fan players worldwide, Real Drift Car Racing is the most realistic 3D drift racing simulation on mobile devices...</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/idubba.png" alt="icouch app" > </div>
+            <div class="title">
+              <h4>iCouchApp</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open rightside">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="iCouch App" title="iCouch App" src="gambar/karya/idubba.png"></div>
+                <div class="app-name">iCouchApp</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a target="_blank" href="https://play.google.com/store/apps/details?id=com.inid.digimedia.icouchapp&hl=en" class="apps-link-play"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Chat LIVE while watching TV programs- customized specifically for TV viewers and channels. Chat around your favorite TV programs or events like Cricket/Football with friends &amp; fans. . .</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="appstoreWrapper">
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/just_eat.png" alt="JUST EAT" > </div>
+            <div class="title">
+              <h4>JUST EAT - Order Food<br>
+                Online</h4>
+            </div>
+            <div class="appPopUp_div app_correct2 app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img title="JUST EAT" src="gambar/karya/just_eat.png" alt="JUST EAT" ></div>
+                <div class="app-name">JUST EAT - Order Food Online</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a class="apps-link-play" href="https://play.google.com/store/apps/details?id=in.justeat" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">New version: Order food online using the JUST EAT India Android App Version 2.4.<br>
+                  A couple of taps is all it takes for you to:<br>
+                  - Browse the menus of 1000's of restaurants<br>
+                  - Pick your favourite food<br>
+                  - Avail exclusive offers<br>
+                  - Pay by card or COD</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/galaxy-dash.png" alt="Galaxy Dash: Race to Outer Run" > </div>
+            <div class="title">
+              <h4>Galaxy Dash: Race to Outer Run</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+              <div class="closediv"></div>
+              <div class="apps-app-icon"><img alt="Galaxy Dash: Race to Outer Run" title="Galaxy Dash: Race to Outer Run" src="gambar/karya/galaxy-dash.png"></div>
+              <div class="app-name">Galaxy Dash: Race to Outer Run</div>
+              <div class="apps-links">
+                <div class="apps-link"> <a target="_blank" href="https://itunes.apple.com/nz/app/galaxy-dash-race-to-outer/id854049928?mt=8" class="apps-link-itunes"></a> <a target="_blank" href="https://play.google.com/store/apps/details?id=com.SuperMoonGames.OuterRun&hl=en" class="apps-link-play"></a> </div>
+              </div>
+              <div class="clear"></div>
+              <div class="app-desc">Become the most infamous galactic smuggler in Galaxy Dash!<br>Galaxy Dash combines the exciting gameplay of an endless runner with the thrill of space combat! Use lasers to blast your way through obstacles, engage in ship to ship...</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/mancala.png" alt="Mancala" > </div>
+            <div class="title">
+              <h4>Mancala</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img title="Mancala" src="gambar/karya/mancala.png" alt="Mancala" ></div>
+                <div class="app-name">Mancala</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a target="_blank" href="https://play.google.com/store/apps/details?id=com.appon.mancala" class="apps-link-play"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Mancala, one of the oldest African traditional indoor game, is available for your mobile.
+                  This game is also famous by the name of “Congkak”, “Sowing”.Get this classic Mancala game with exclusive board. . . </div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/chhota_bheem.png" alt="chhota bheem" > </div>
+            <div class="title">
+              <h4>Chhota Bheem Mice Mayhem Lite</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="Chhota Bheem" title="Chhota Bheem" src="gambar/karya/chhota_bheem.png"></div>
+                <div class="app-name">Chhota Bheem Mice Mayhem Lite</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a target="_blank" href="https://play.google.com/store/apps/details?id=com.jumpgames.chhotabheemmmlite.main" class="apps-link-play"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Kalia has planned to take revenge on Bheem by letting in mice in all the ladoo shops. Play as Bheem and catch the mice before they eat all the ladoos. Clear all 12 levels to win the game!! . . .</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/read-african-books.png" alt="Read African Books: Okadabooks"> </div>
+            <div class="title">
+              <h4>Read African Books: Okadabooks</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open rightside">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="Read African Books: Okadabooks" title="Read African Books: Okadabooks" src="gambar/karya/read-african-books.png"></div>
+                <div class="app-name">Read African Books: Okadabooks</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a target="_blank" href="https://play.google.com/store/apps/details?id=com.okadabooks" class="apps-link-play"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">OKADABOOKS...Join thousands who have hopped on the okadabooks ride...the fast, simple and fun way to read books without ever leaving your couch! Install the app, choose a book, download and start reading – it’s as easy as riding an okada...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="appstoreWrapper">
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/epic_sword.png" alt="Epic Swords 2"> </div>
+            <div class="title">
+              <h4>Epic Swords 2</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img title="Epic Sword" src="gambar/karya/epic_sword.png" alt="Epic Swords 2"></div>
+                <div class="app-name">Epic Sword 2</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a target="_blank" href="https://play.google.com/store/apps/details?id=com.lootworks.swords" class="apps-link-play"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Epic Swords will test your skill in sword fighting as you move from simple swings to finding your opponent’s weaknesses, judging when to block an attack, selecting the right mystical sword for the battle at hand, and using special, fantastical moves to slay the enemy! Epic Swords is free to play,. . .</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/soccer-kick.png" alt="Soccer Kick - World Cup 2014"> </div>
+            <div class="title">
+              <h4>Soccer Kick - World Cup 2014</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="Soccer Kick - World Cup 2014" title="Soccer Kick - World Cup 2014" src="gambar/karya/soccer-kick.png"></div>
+                <div class="app-name">Soccer Kick - World Cup 2014</div>
+                <div class="apps-links">
+                  <div class="apps-link"> <a target="_blank" href="https://play.google.com/store/apps/details?id=com.vg.SoccerWC14" class="apps-link-play"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Are you the biggest soccer World Cup fan out there?. And do you want to take control of your favorite national soccer team that competes in the World Cup this year. Become the champion and hero of the day right now! Do you have what it takes to become a legend on the football pitch...</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/free-mobile-recharge.png" alt="Free Mobile Recharge" class="app_img"> </div>
+            <div class="title">
+              <h4>Free Mobile Recharge</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/free-mobile-recharge.png"  title="Free Mobile Recharge" alt="Free Mobile Recharge"></div>
+                <div class="app-name">Free Mobile Recharge</div>
+                <div class="apps-links">
+                  <div class="apps-link"> <a class="apps-link-play" href="https://play.google.com/store/apps/details?id=com.pokkt.app.pocketmoney" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">The issue with Referrals has been fixed. All users will now receive the referral amount. We will also credit the users who faced problems in the past.
+                  Welcome to POKKT. After distributing Millions worth Free Recharge on the Web we have now launched on Android...</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/mega-tic-tac-toe.png" alt="Mega Tic Tac Toe" class="app_img"> </div>
+            <div class="title">
+              <h4>Mega Tic Tac Toe</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/mega-tic-tac-toe.png"  title="Mega Tic Tac Toe" alt="Mega Tic Tac Toe"></div>
+                <div class="app-name">Mega Tic Tac Toe</div>
+                <div class="apps-links">
+                  <div class="apps-link"> <a class="apps-link-itunes" href="https://itunes.apple.com/us/app/mega-tic-tac-toe-online/id592821981?mt=8" target="_blank"></a> <a class="apps-link-play" href="https://play.google.com/store/apps/details?id=NoamStudios.Games.MegaTicTacToeFree" target="_blank"></a> <a class="apps-link-windows" href="http://www.windowsphone.com/en-us/store/app/mega-tic-tac-toe/f52e4ca5-d95a-42f4-a11e-86f57c0f3ded?signin=true" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc" draggable="true">A revolutionary version for the classic Tic Tac Toe game!
+                  Be the first to make a 5 in a row line against a strong artificial intelligence engine or play with players around the world!</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/block-force.png" alt="Block Force" class="app_img"> </div>
+            <div class="title">
+              <h4>Block Force - Pixel Style Gun Shooter Game</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open rightside">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/block-force.png"  title="Block Force" alt="Block Force"></div>
+                <div class="app-name">Block Force - Pixel Style Gun Shooter Game</div>
+                <div class="apps-links">
+                  <div class="apps-link"> <a class="apps-link-itunes" href="https://itunes.apple.com/tw/app/block-force-pixel-style-gun/id868654537?mt=8" target="_blank"></a><a class="apps-link-amazon" href="http://www.amazon.com/Block-Force-Shooter-Survival-Multiplayer/dp/B00M2SK14S" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Block Force - Developed by JoyDo Studio.<br>
+                  JoyDo Studio: the developer of the famous games "Cops N Robbers (FPS)" , "Cops N Robbers(Jail Break)" and "Survival ....</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="virtualpage hidepiece" id="secondPage">
+        <div class="appstoreWrapper">
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/2048-puzzle.png" alt="2048 Puzzle"> </div>
+            <div class="title">
+              <h4>2048 Puzzle</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="2048 Puzzle" title="2048 Puzzle" src="gambar/karya/2048-puzzle.png"></div>
+                <div class="app-name">2048 Puzzle</div>
+                <div class="apps-links">
+                  <div class="apps-link"> <a target="_blank" href="http://store.ovi.com/content/515801" class="apps-link-j2me"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">2048 Number Puzzle Game has millions of players on Google Play and AppStore. Now, it's available on Nokia Store. Let's join the numbers and get to the 2048 tile...</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/paper-soccer-online.png" alt="Paper Soccer Online" class="app_img"> </div>
+            <div class="title">
+              <h4>Paper Soccer Online</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/paper-soccer-online.png"  title="Paper Soccer Online" alt="Paper Soccer Online"></div>
+                <div class="app-name">Paper Soccer Online</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a class="apps-link-play" href="http://www.windowsphone.com/en-us/store/app/paper-soccer-online/2a52b226-048c-453d-bdff-43ce4c18e6b9" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Paper soccer is a turn-based strategic game, which idea is taken from a classic pencil and paper game. The aim of the game is to place a ball in the opponent's goal or force the opponent to come to a deadlock – a point with no valid moves. The game starts on an empty field with the ball drawn in its center. . . . </div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/Pokerrrr-The-poker-dealer.png" alt="Pokerrrr-The Poker Dealer" class="app_img"> </div>
+            <div class="title">
+              <h4>Pokerrrr-The Poker Dealer</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/Pokerrrr-The-poker-dealer.png"  title="Pokerrrr-The Poker Dealer" alt="Pokerrrr-The Poker Dealer"></div>
+                <div class="app-name">Pokerrrr-The Poker Dealer</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a class="apps-link-itunes" href="https://itunes.apple.com/us/app/pokerrrr-the-poker-dealer/id592081067?ls=1&mt=8" target="_blank"></a> <a class="apps-link-play" href="https://play.google.com/store/apps/details?id=com.ptfarm.pokerrrr" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Pokerrrr" is a tool that replaces poker dealer, table and cards to just iPad and iPhones, which means "live" poker games become much easier and comfortable during party time and can be easily setup in your poker/sport bar. . . . </div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/care-race-downtown-rush.png" alt="Car Race: DownTown Rush" class="app_img"> </div>
+            <div class="title">
+              <h4>Car Race: DownTown Rush</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/care-race-downtown-rush.png"  title="Car Race: DownTown Rush" alt="Car Race: DownTown Rush"></div>
+                <div class="app-name">Car Race: DownTown Rush</div>
+                <div class="apps-links noMar_padd">
+                  <div class="apps-link"> <a class="apps-link-play" href="https://play.google.com/store/apps/details?id=iyana.iyanadroid" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Down Town Rush is a 2D racing game with simple control packed with hours of fun.<br>
+                  Tilt phone to control car direction<br>
+                  Tap on nitro button to accelerate...</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/gravitire_ios.png" alt="Gravitire 3D" class="app_img"> </div>
+            <div class="title">
+              <h4>Gravitire 3D</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open rightside">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/gravitire_ios.png"  title="Gravitire 3D" alt="Gravitire 3D"></div>
+                <div class="app-name">Gravitire 3D</div>
+                <div class="apps-links noMar_padd">
+                  <div class="apps-link"> <a class="apps-link-itunes" href="https://itunes.apple.com/app/gravitire-3d/id483158617?mt=8" target="_blank"></a> <a class="apps-link-play" href="https://play.google.com/store/apps/details?id=com.anuloid.gravitire3d&amp;hl=en" target="_blank" ></a> </div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">GraviTire 3D is an attractive game to enjoy spending time on controlling a tire. Gamers love GraviTire 3D as it provides mental stimulation and friendly competition among friends. . .</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="appstoreWrapper">
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/jumping-politicians-obama.png" alt="Jumping Politicians Obama!" class="app_img"> </div>
+            <div class="title">
+              <h4>Jumping Politicians Obama!</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/jumping-politicians-obama.png"  title="Jumping Politicians Obama!" alt="Jumping Politicians Obama!"></div>
+                <div class="app-name">Jumping Politicians Obama!</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a class="apps-link-play" href="https://play.google.com/store/apps/details?id=game.jumping.politicians" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Join world politicians and jump, jump, jump. No splash, no flip flop, no run and no flap, Jumping Politicians is different from Flappy Bird and yet is inspired by its many successors such as Clumsy Bird, Flappy Doge, Ironpants, and Splashy Fish.. . . . </div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/king-of-wings.png" alt="King of Wings"> </div>
+            <div class="title">
+              <h4>King of Wings</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="King of Wings" title="King of Wings" src="gambar/karya/king-of-wings.png"></div>
+                <div class="app-name">King of Wings</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a target="_blank" href="https://play.google.com/store/apps/details?id=com.dgnt.kingofwings" class="apps-link-play"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Tilt your phone to navigate a bird through obstacles and collect crowns in this fast action game. Last as long as you can while collecting as many crowns as possible to get the highest score ever. Compare your high score with your friends around the world...</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/magic_block.png" alt="magic block" class="app_img"> </div>
+            <div class="title">
+              <h4>Magic Block Fun Puzzle</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/magic_block.png"  title="Magic Block" alt="Magic Block"></div>
+                <div class="app-name">Magic Block Fun Puzzle</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a class="apps-link-play" href="https://play.google.com/store/apps/details?id=com.iyanagames.MagicBlocks" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Magic Blocks is a truly fun puzzle game that can entertain as well as make you think . Once you get going ,its truly addictive. With 100 levels of intriguing gameplay. . . </div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/no-girls-allowed.png" alt="No Girls Allowed" class="app_img"> </div>
+            <div class="title">
+              <h4>No Girls Allowed</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/no-girls-allowed.png"  title="No Girls Allowed" alt="No Girls Allowed"></div>
+                <div class="app-name">No Girls Allowed</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a class="apps-link-play" href="https://play.google.com/store/apps/details?id=com.TrickBow.NoGirlsAllowed" target="_blank"></a><a class="apps-link-windows" href="http://www.windowsphone.com/en-us/store/app/no-girls-allowed/b2df260b-40ea-47cb-adc5-847e6f262e56" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Defend your fort from the ruthless onslaught of the little girl army. Use slingshots, water balloons, dirty diapers, and more to gain an edge in the war. But it doesn't stop there - you will also be able to unlock 9 different recruits to aide you as you clash with the girl clan, from baseball players to cowboys to knights. This fast-paced defense game will keep you on your toes and entertained for hours. . . </div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/vocabularygame.png" alt="Vocabulary Game"> </div>
+            <div class="title">
+              <h4>ฝึกจำศัพท์อังกฤษ Game</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open rightside">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="Vocabulary Game" title="Vocabulary Game" src="gambar/karya/vocabularygame.png"></div>
+                <div class="app-name">ฝึกจำศัพท์อังกฤษ Game</div>
+                <div class="apps-links">
+                  <div class="apps-link"> <a target="_blank" href="https://play.google.com/store/apps/details?id=createbyme6941.game.vocabularygame" class="apps-link-play"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">เกมที่รวบรวมคำศัพท์ภาษาอังกฤษไว้มากมาย และประยุกต์มาเป็นเกม วิธีการเล่นแค่เพียงจับคู่คำศัพท์และความหมายภาษาอังกฤษให้ตรงกัน เมื่อตอบถูกจะได้รับคะแนน ซึ่งคะแนนที่ยิ่งมาก คือ ความสามารถในการจำศัพท์ภาษาอังกฤษได้มากตามไปด้วยนั่นเอง...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="appstoreWrapper">
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/sudoku-wa.png" alt="Sudoku Wa" class="app_img"> </div>
+            <div class="title">
+              <h4>Sudoku Wa</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/sudoku-wa.png"  title="Sudoku Wa" alt="Sudoku Wa"></div>
+                <div class="app-name">Sudoku Wa</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a class="apps-link-play" href="https://play.google.com/store/apps/details?id=com.systemicsolutions.sudokuwa" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">The best application for the best reflexion game : Sudoku Wa !
+                  Let's go to play the most beautiful Sudoku game on mobile phone and tablet with a lot of features likes. . . </div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/world_brains.png" alt="World of Brains" class="app_img"> </div>
+            <div class="title">
+              <h4>World of Brains</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/world_brains.png"  title="World of Brains" alt="World of Brains"></div>
+                <div class="app-name">World of Brains</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a class="apps-link-play" href="https://play.google.com/store/apps/details?id=com.casualbee.worldofbrains2" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">World of Brains is a classic casual puzzle game. The game really needs smart brains. Control the green monsters to supply the brain to pass the game! There are many well-designed levels in the game for you to pass! . . .</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/basketball_3d.png" alt="Basketball 3d" > </div>
+            <div class="title">
+              <h4>Basketball 3d</h4>
+            </div>
+            <div class="appPopUp_div app_box" style="display: none;">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="BasketBall 3D" title="BasketBall 3D" src="gambar/karya/basketball_3d.png"></div>
+                <div class="app-name">BasketBall 3D</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a target="_blank" href="https://itunes.apple.com/us/app/basketball-3d/id656629474?mt=8" class="apps-link-itunes"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Flick the ball towards the basket to take a shot and feel the fun on playing real basketball. Basketball 3D is an awesome real feel game which can really challenge your shooting skills. . .</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/football_kick.png" alt="Football Kick Flick" class="app_img"> </div>
+            <div class="title">
+              <h4>Football Kick Flick</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/football_kick.png"  title="Football Kick Flick" alt="Football Kick Flick"></div>
+                <div class="app-name">FootBall Kick Flick</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a class="apps-link-itunes" href="https://itunes.apple.com/us/app/football-kick-flick-free-rugby/id769338889?mt=8" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Football Kick Flick is the latest of the Rugby on Appstore. Football, also better known as Rugby is Countries like Australia, is an intense sports game and if you want to experience the latest Rugby experience on your iPhone and iPad, download this game.</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/little-wisp.png" alt="Little Wisp - Free" class="app_img"> </div>
+            <div class="title">
+              <h4>Little Wisp - Free</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open rightside">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/little-wisp.png"  title="Little Wisp - Free" alt="Little Wisp - Free"></div>
+                <div class="app-name">Little Wisp - Free</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a class="apps-link-itunes" href="https://itunes.apple.com/au/app/little-wisp-free/id805034410?mt=8" target="_blank"></a></div>
+                  <div class="apps-link"><a class="apps-link-play" href="https://play.google.com/store/apps/details?id=com.SealedTech.LittleWispFree&hl=en" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Assist Mother Nature in reuniting all the animals scattered across the land by evil creatures. Play as little wisp in multiple challenging levels, tracing the green pastures of Noah’s plains to the deepest pit of Mt.Tumble. Get assistance from the animals you rescued throughout the land.. . . </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="appstoreWrapper">
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/pirate-fairy-legend.png" alt="Pirate Fairy Legend"> </div>
+            <div class="title">
+              <h4>Pirate Fairy Legend</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="Pirate Fairy Legend" title="Pirate Fairy Legend" src="gambar/karya/pirate-fairy-legend.png"></div>
+                <div class="app-name">Pirate Fairy Legend</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a target="_blank" href="https://play.google.com/store/apps/details?id=com.codeartis.pfl&referrer=" class="apps-link-play"></a> <a target="_blank" href="https://itunes.apple.com/in/app/id842126213?mt=8" class="apps-link-itunes"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Aaaaaaaarg.....Time to sharpen your matching skills with Pirate Fairy Legend. Sail your way along the Sword Coast by matching 3 or more magic vials.
+                  Solve the mystery that plagues these waters and restore balance to the land. Pirate and hoard all the treasure you can to give you access to boosters.
+                  Beware... The ever changing gravity will make your quest ever more challenging...</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/retro-invaders-saga.png" alt="Retro Invaders Saga" class="app_img"> </div>
+            <div class="title">
+              <h4>Retro Invaders Saga</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/retro-invaders-saga.png"  title="Retro Invaders Saga" alt="Retro Invaders Saga"></div>
+                <div class="app-name">Retro Invaders Saga</div>
+                <div class="apps-links">
+                  <div class="apps-link"> <a class="apps-link-itunes" href="https://itunes.apple.com/us/app/retro-invaders-saga/id869141492" target="_blank"></a> </div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">COME HELP DEFEND THE UNIVERSE!
+                  You have been selected to pilot remote drone fighter ships to help in this on-going space battle...</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/spinning-space.png" alt="Spinning Space Vortex"> </div>
+            <div class="title">
+              <h4>Spinning Space Vortex</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="Spinning Space Vortex" title="Spinning Space Vortex" src="gambar/karya/spinning-space.png"></div>
+                <div class="app-name">Spinning Space Vortex</div>
+                <div class="apps-links">
+                  <div class="apps-link"> <a target="_blank" href="https://itunes.apple.com/us/app/spinning-space-vortex-challenging/id877398894?mt=8" class="apps-link-itunes"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Do you love a challenge? Do you have the ability to remain focused in a changing environment? Well, prepare for the ultimate quest as you navigate your ship through an ever changing vortex in space. Weaving your way through a maze of spinning geometric shapes won’t be easy but the fun...</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/twixt.png" alt="TwixT" > </div>
+            <div class="title">
+              <h4>TwixT</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img  title="TwixT" src="gambar/karya/twixt.png" alt="TwixT"/></div>
+                <div class="app-name">TwixT</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a target="_blank" href="http://www.windowsphone.com/en-us/store/app/twixt/c6fdc93e-3de2-493d-bef6-1f82ddc92af4" class="apps-link-windows"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">TwixT is a two-player strategy board game.
+                  It is really simple to play, but really difficult to master. It is played on board comprising a 24×24 grid. And on his turn each player will place a pillar. Easy...</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/word-portal.png" alt="Word Portal" > </div>
+            <div class="title">
+              <h4>Word Portal</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open rightside">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img  title="Word Portal" src="gambar/karya/word-portal.png" alt="Word Portal"/></div>
+                <div class="app-name">Word Portal</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a target="_blank" href="https://itunes.apple.com/us/app/word-portal/id681821972?ls=1&mt=8" class="apps-link-itunes"></a><a target="_blank" href="https://play.google.com/store/apps/details?id=com.bentvector.wordportal" class="apps-link-play"></a> </div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Tap your way through endless levels in this word game adventure. Join Porter and discover the wondrous universe of Word Portal. Pass level 40 to unlock endless game mode - how high can you climb? Play at your own pace; create great words; compete online...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="virtualpage hidepiece" id="tirthPage">
+        <div class="appstoreWrapper">
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/jewelmatch3.png" alt="Jewel Match3" > </div>
+            <div class="title">
+              <h4>Jewel Match: Match 3 Game</h4>
+            </div>
+            <div class="appPopUp_div app_correct2 app_box" style="display: none;">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="Jewel Match - Match 3 Game" title="Jewel Match - Match 3 Game" src="gambar/karya/jewelmatch3.png" ></div>
+                <div class="app-name">Jewel Match: Match 3 Game</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a target="_blank" href="https://itunes.apple.com/us/app/jewel-match-match-3-game/id770731378?mt=8" class="apps-link-itunes"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Are you ready to play the classic jewel matching game &ndash; Jewel Match ? This is an amazing multi-player game that comes with a twist. play against your buddies and random Opponents... </div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/retro-invaders.png" alt="Retro Invaders"> </div>
+            <div class="title">
+              <h4>Retro Invaders</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="Retro Invaders" title="Retro Invaders" src="gambar/karya/retro-invaders.png"></div>
+                <div class="app-name">Retro Invaders</div>
+                <div class="apps-links">
+                  <div class="apps-link"> <a target="_blank" href="https://itunes.apple.com/us/app/retro-invaders-saga/id869141492" class="apps-link-itunes"></a><a target="_blank" href="https://play.google.com/store/apps/details?id=com.soren.retroinvaders" class="apps-link-play"></a> <a target="_blank" href="http://www.amazon.com/gp/product/B00JVZJPZG" class="apps-link-amazon"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">COME HELP DEFEND THE UNIVERSE!!!<br>
+                  You have been selected to pilot remote drone fighter ships to help in this on-going space battle.
+                  Take control of remote drone ships from your hand-held device.</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/circullets.png" alt="Circulets" class="app_img"> </div>
+            <div class="title">
+              <h4>Circulets</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/circullets.png"  title="Circulets" alt="Circulets"></div>
+                <div class="app-name">Circulets</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a class="apps-link-itunes" href="https://itunes.apple.com/us/app/circulets-game-for-families/id633253328" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Circulets takes the fun for families and parties to the next level by introducing two players to a competitive play on a single device. Define your own rules as you collect circulets (or not) to play. . .</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"><img class="app_img" src="gambar/karya/floppy-fin.png" alt="Floppy Fin - Multiplayer Racing"> </div>
+            <div class="title">
+              <h4>Floppy Fin<br>
+                Multiplayer Racing</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img title="JUST EAT" src="gambar/karya/floppy-fin.png" alt="Floppy Fin - Multiplayer Racing" ></div>
+                <div class="app-name">Floppy Fin - Multiplayer Racing</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a class="apps-link-itunes" href="https://itunes.apple.com/us/app/floppy-fin/id817950936?mt=8" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">oin the adventures of FloppyFin. Guide Floppy through the ocean carefully avoiding the rocks. Will you sink or will you swim?</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/ben10-ultimatealienAA.png" alt="Ben10 Ultimate Alien AA Free" class="app_img"> </div>
+            <div class="title">
+              <h4>Ben10 Ultimate Alien AA Free</h4>
+            </div>
+            <div class="appPopUp_div app_correct2 app_box">
+              <div class="apps-overlay apps-overlay-open rightside">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/ben10-ultimatealienAA.png"  title="Ben10 Ultimate Alien AA Free" alt="Ben10 Ultimate Alien AA Free"></div>
+                <div class="app-name">Ben10 Ultimate Alien AA Free</div>
+                <div class="apps-links" >
+                  <div class="apps-link"><a class="apps-link-j2me" href="http://store.ovi.com/content/365717?clickSource=search&pos=1" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Aggregors Attack is an isometric action game based on the Ben 10 Ultimate Alien series. Play as Ben and rescue the five aliens captured by Aggregor. Find the various pieces of Plumber teleporter technology...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="appstoreWrapper">
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/birdhuntpro.png" alt="Bird Hunter Pro" class="app_img"> </div>
+            <div class="title">
+              <h4>Bird Hunter Pro</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/birdhuntpro.png"  title="Bird Hunter Pro" alt="Bird Hunter Pro"></div>
+                <div class="app-name">Bird Hunter Pro</div>
+                <div class="apps-links" >
+                  <div class="apps-link"><a class="apps-link-j2me" href="http://store.ovi.com/content/365518?clickSource=search&pos=1" target="_blank"></a> </div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Get ready to help Rob who is on a mission to blow the birds who have planned to destroy his farms. You have to help Rob by blowing up birds using darts. Try to blow as many birds as required. . . </div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/bodyguard.png" alt="Body Guard" class="app_img"> </div>
+            <div class="title">
+              <h4>Body Guard</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/bodyguard.png"  title="Body Guard" alt="Body Guard"></div>
+                <div class="app-name">Body Guard</div>
+                <div class="apps-links" >
+                  <div class="apps-link"><a class="apps-link-j2me" href="http://store.ovi.com/content/249704?clickSource=search&pos=1" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Bodyguard is an 'all action' side-scrolling adventure game where you are in charge! Take on the role of a loyal bodyguard and protector of a business tycoon’s daughter. Are you ready to be the ultimate protector?</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/borderwarenemy.png" alt="Border War Enemy territory" class="app_img"> </div>
+            <div class="title">
+              <h4>Border War Enemy territory</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/borderwarenemy.png"  title="Border War Enemy territory" alt="Border War Enemy territory"></div>
+                <div class="app-name">Border War Enemy territory</div>
+                <div class="apps-links" >
+                  <div class="apps-link"><a class="apps-link-j2me" href="http://store.ovi.com/content/325078?clickSource=search&pos=1" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">The war has begun and your country needs you. Play as a courageous soldier in the enemy territory. Keep your aim sharp and take down the enemy insurgents. It is time to show the enemy that we rule.</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/borderwarloc.png" alt="Border War LOC" class="app_img"> </div>
+            <div class="title">
+              <h4>Border War LOC</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/borderwarloc.png"  title="Border War LOC" alt="Border War LOC"></div>
+                <div class="app-name">Border War LOC</div>
+                <div class="apps-links" >
+                  <div class="apps-link"><a class="apps-link-j2me" href="http://store.ovi.com/content/269325?clickSource=search&pos=3" target="_blank"></a> </div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Border War Line Of Control is the modern day rendition of an arcade classic. Protect your borders with a new age weapon, a super cannon. The enemy has decided to destroy this tank and invade your borders. . . </div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/chhotabheem-infinitehunger.png" alt="Chhota Bheem Infinite Hunger" class="app_img"> </div>
+            <div class="title">
+              <h4>Chhota Bheem Infinite Hunger</h4>
+            </div>
+            <div class="appPopUp_div app_correct2 app_box">
+              <div class="apps-overlay apps-overlay-open rightside">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/chhotabheem-infinitehunger.png"  title="Chhota Bheem Infinite Hunger" alt="Chhota Bheem Infinite Hunger"></div>
+                <div class="app-name">Chhota Bheem Infinite Hunger</div>
+                <div class="apps-links" >
+                  <div class="apps-link"><a class="apps-link-j2me" href="http://store.ovi.com/content/365552?clickSource=search&pos=1" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Bheem is hungry but Tun tun mausi has made him promise that he won't touch the ladoos without her permission. Chutki has offered to help Bheem but can she help satisfy Bheem's hunger for ladoos while Kalia and Daku Mangal Singh are out to get some ladoos for themselves? </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="appstoreWrapper">
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/chhotabheem-kartracer.png" alt="Chhota Bheem Kart Racer" class="app_img"> </div>
+            <div class="title">
+              <h4>Chhota Bheem Kart Racer</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/chhotabheem-kartracer.png"  title="Chhota Bheem Kart Racer" alt="Chhota Bheem Kart Racer"></div>
+                <div class="app-name">Chhota Bheem Kart Racer</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a class="apps-link-j2me" href="http://store.ovi.com/content/385273?clickSource=search&pos=1" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Get Ready to race with Chhota Bheem Kart Racer! The game has two modes: Championship mode - Select your favorite character and race against Kichak and his friends...</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/chhotabheem-pirateattack.png" alt="Chhota Bheem Pirate Attack" class="app_img"> </div>
+            <div class="title">
+              <h4>Chhota Bheem Pirate Attack</h4>
+            </div>
+            <div class="appPopUp_div app_correct2 app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/chhotabheem-pirateattack.png"  title="Chhota Bheem Pirate Attack" alt="Chhota Bheem Pirate Attack"></div>
+                <div class="app-name">Chhota Bheem Pirate Attack</div>
+                <div class="apps-links" >
+                  <div class="apps-link"><a class="apps-link-j2me" href="http://store.ovi.com/content/365588?clickSource=search&pos=1" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">The official game for Chhota Bheem. Pirates intercepted the Royal ship, capturing Raja Indravarma along with his daughter Indumati. Help Chhota Bheem in the rescue mission...</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/chhotabheem-savetheladoos.png" alt="Chhota Bheem Save The Ladoos" class="app_img"> </div>
+            <div class="title">
+              <h4>Chhota Bheem Save The Ladoos</h4>
+            </div>
+            <div class="appPopUp_div app_correct2 app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/chhotabheem-savetheladoos.png"  title="Chhota Bheem Save The Ladoos" alt="Chhota Bheem Save The Ladoos"></div>
+                <div class="app-name">Chhota Bheem Save The Ladoos</div>
+                <div class="apps-links" >
+                  <div class="apps-link"><a class="apps-link-j2me" href="http://store.ovi.com/content/370467?clickSource=search&pos=1" target="_blank"></a> </div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">The official game for Chhota Bheem. Help Tun Tun Mausi deliver Raja Indravarma's Huge order of ladoos to serve all the villagers of Dholakpur. Tun Tun mausis ladoo factory. . . </div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/generatorrex-packfighter.png" alt="Generator Rex Pack Fighter" class="app_img"> </div>
+            <div class="title">
+              <h4>Generator Rex Pack Fighter</h4>
+            </div>
+            <div class="appPopUp_div app_correct2 app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/generatorrex-packfighter.png"  title="Generator Rex Pack Fighter" alt="Generator Rex Pack Fighter"></div>
+                <div class="app-name">Generator Rex Pack Fighter</div>
+                <div class="apps-links" >
+                  <div class="apps-link"><a class="apps-link-j2me" href="http://store.ovi.com/content/251987?clickSource=search&pos=1" target="_blank"></a> </div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Generator Rex Pack Fighter is a one-on-one versus fighting game. Take on the role of Rex Salazar, an E.V.O. with the ability to control his nanites and fight members of. . . </div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/hawkthesuperhero.png" alt="Hawk The Super Hero Free" class="app_img"> </div>
+            <div class="title">
+              <h4>Hawk The Super Hero Free</h4>
+            </div>
+            <div class="appPopUp_div  app_box">
+              <div class="apps-overlay apps-overlay-open rightside">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/hawkthesuperhero.png"  title="Hawk The Super Hero Free" alt="Hawk The Super Hero Free"></div>
+                <div class="app-name">Hawk The Super Hero Free</div>
+                <div class="apps-links" >
+                  <div class="apps-link"><a class="apps-link-j2me" href="http://store.ovi.com/content/363515?clickSource=search&pos=1" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Help Hawk, the super hero protect the citizens of the city from Dr. Chaos evil plans. Play as the super hero Hawk and destroy the enemies by blasting them to oblivion. Use your special abilities to thwart Dr. Chaos evil plans.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="appstoreWrapper">
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/iccchampions-2013.png" alt="ICC Champions Trophy 2013" class="app_img"> </div>
+            <div class="title">
+              <h4>ICC Champions Trophy 2013</h4>
+            </div>
+            <div class="appPopUp_div app_correct2 app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/iccchampions-2013.png"  title="ICC Champions Trophy 2013" alt="ICC Champions Trophy 2013"></div>
+                <div class="app-name">ICC Champions Trophy 2013</div>
+                <div class="apps-links" >
+                  <div class="apps-link"><a class="apps-link-j2me" href="http://store.ovi.com/content/368228?clickSource=search&pos=1" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">The highly anticipated Cricket tournament is here, the ICC Champions Trophy 2013! Get your hands on the official ICC Champions Trophy 2013 mobile game and be a part of the intense cricketing action...</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/agentsmithwaterfront.png" alt="Agent Smith Waterfront" class="app_img"> </div>
+            <div class="title">
+              <h4>Agent Smith Waterfront</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/agentsmithwaterfront.png"  title="Agent Smith Waterfront" alt="Agent Smith Waterfront"></div>
+                <div class="app-name hd_appName">Agent Smith Waterfront</div>
+                <div class="apps-links noMar_padd" >
+                  <div class="apps-link"><a class="apps-link-j2me" href="http://store.ovi.com/content/364853?clickSource=search&pos=1" target="_blank"></a> </div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Help secret Agent Smith to cover a specific distance and deliver top secret packages to different locations in the world. Defend Agent Smith from mines, missiles, auto gun's bullet, terrorists on jet ski and explosions... </div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/ben10-alienhunter.png" alt="Ben10 Alien Hunter" class="app_img"> </div>
+            <div class="title">
+              <h4>Ben10 Alien Hunter</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/ben10-alienhunter.png"  title="Ben10 Alien Hunter" alt="Ben10 Alien Hunter"></div>
+                <div class="app-name">Ben10 Alien Hunter</div>
+                <div class="apps-links" >
+                  <div class="apps-link"><a class="apps-link-j2me" href="http://store.ovi.com/content/375228?clickSource=search&pos=1" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Ben's alien forms have escaped from the Omnitrix and are wreaking havoc in the city. Help Ben capture the escaped alien forms before they do any serious damage! Time your actions...</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/ben10-ultimateescape.png" alt="Ben10 UA Ultimate Escape" class="app_img"> </div>
+            <div class="title">
+              <h4>Ben10 UA Ultimate Escape</h4>
+            </div>
+            <div class="appPopUp_div  app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/ben10-ultimateescape.png"  title="Ben10 UA Ultimate Escape" alt="Ben10 UA Ultimate Escape"></div>
+                <div class="app-name">Ben10 UA Ultimate Escape</div>
+                <div class="apps-links" >
+                  <div class="apps-link"><a class="apps-link-j2me" href="http://store.ovi.com/content/275729?clickSource=search&pos=1" target="_blank"></a> </div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Take on the role of Ben who is stuck in a different world and has to find a way back to his own place. Climb/descend various platforms, some with traps, to reach the destination. Jump from one platform to another. . . </div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/ben10-battleomnitrix.png" alt="Ben10 Battle For The Omnitrix" class="app_img"> </div>
+            <div class="title">
+              <h4>Ben10 Battle For The Omnitrix</h4>
+            </div>
+            <div class="appPopUp_div app_correct2 app_box">
+              <div class="apps-overlay apps-overlay-open rightside">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/ben10-battleomnitrix.png"  title="Ben10 Battle For The Omnitrix" alt="Ben10 Battle For The Omnitrix"></div>
+                <div class="app-name">Ben10 Battle For The Omnitrix</div>
+                <div class="apps-links" >
+                  <div class="apps-link"><a class="apps-link-j2me" href="http://store.ovi.com/content/249703?clickSource=search&pos=1" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">The greatest battle for The Omnitrix is set to take place on your mobile. You are Ben as he battles across death defying levels and faces off with his arch enemies Megawatts, Werewolf and Ghostfreak .Travel through the Ben10 universe with the Omnitrix in your hand, converting into Heatblast, Cannonbolt and other aliens to defeat your most dreaded enemies in a head to head combat to save the Earth. . . </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="virtualpage hidepiece" id="fourthPage">
+        <div class="appstoreWrapper">
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/tika-piga.png" alt="tika piga" class="app_img"> </div>
+            <div class="title">
+              <h4>tika piga</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/tika-piga.png"  title="tika piga" alt="tika piga"></div>
+                <div class="app-name">tika piga</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a class="apps-link-itunes" href="https://itunes.apple.com/us/app/tika-piga/id856973884?mt=8" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">This is a stunning game changer, use your skill to catch the piga aka the pig ! ... </div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/alien.png" alt="Alien Arcade Attack" class="app_img"> </div>
+            <div class="title">
+              <h4>Alien Arcade Attack</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon right"><img src="gambar/karya/alien.png"  title="Alien Arcade Attack" alt="Alien Arcade Attack"></div>
+                <div class="app-name">Alien Arcade Attack</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a class="apps-link-play" href="https://play.google.com/store/apps/details?id=com.SoloProjects.ProductName&hl=en" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Alien Arcade Attack is an 80's style Space Shooter. Featuring 3 Levels of difficulty and 9 hazards and enemies. The strength of your opponents is randomly increased based on your difficulty choice.(Multiple Hits will be Needed) This allows for varied game play every time...</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/ball_shootout.png" alt="Ball Shootout" class="app_img"> </div>
+            <div class="title">
+              <h4>Ball Shootout (beta)</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/ball_shootout.png"  title="Ball Shootout" alt="Ball Shootout"></div>
+                <div class="app-name">Ball Shootout (beta)</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a class="apps-link-play" href="https://play.google.com/store/apps/details?id=com.skakac.bshootout" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Super simple basketball game, using popular idea with some changes.
+                  You can try out 2 player multiplayer mode, and compete on global leaderboard.</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/bao-zanzibar.png" alt="Bao Zanzibar - Free Version"> </div>
+            <div class="title">
+              <h4>Bao Zanzibar - Free Version</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="Bao Zanzibar - Free Version" title="Bao Zanzibar - Free Version" src="gambar/karya/bao-zanzibar.png"></div>
+                <div class="app-name">Bao Zanzibar - Free Version</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a target="_blank" href="https://play.google.com/store/apps/details?id=com.xencia.baogame.free" class="apps-link-play"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Bao, a traditional African mancala game, is the most recognised of all the African board games. It has a legacy stretching back thousands of years. Outwit your opponent with superior tactics and strategy.<br>
+                  - English, French, Swahili and Portuguese language options.<br>
+                  - Free version includes novice play against the computer only.</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/spfcannonfire.png" alt="SPF CannonFire" class="app_img"> </div>
+            <div class="title">
+              <h4>SPF CannonFire</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open rightside">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/spfcannonfire.png"  title="SPF CannonFire" alt="SPF CannonFire"></div>
+                <div class="app-name">SPF CannonFire</div>
+                <div class="apps-links" >
+                  <div class="apps-link"><a class="apps-link-j2me" href="http://store.ovi.com/content/299615?clickSource=search&pos=1" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Get ready to protect your borders with a new age weapon,a super cannon...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="appstoreWrapper">
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/t20premierleague-2013.png" alt="T20 Premier League 2013" class="app_img"> </div>
+            <div class="title">
+              <h4>T20 Premier League 2013</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/t20premierleague-2013.png"  title="T20 Premier League 2013" alt="T20 Premier League 2013"></div>
+                <div class="app-name">T20 Premier League 2013</div>
+                <div class="apps-links" >
+                  <div class="apps-link"><a class="apps-link-j2me" href="http://store.ovi.com/content/359590?clickSource=search&pos=4" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">The cricket tournament everybody is looking forward to. Experience the T20 Season action. Choose from several modes of play including Quick Match and Challenges. Which side are you on? Get ready for intense cricketing action.</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/tigerthebhai.png" alt="Tiger The Bhai" class="app_img"> </div>
+            <div class="title">
+              <h4>Tiger The Bhai</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/tigerthebhai.png"  title="Tiger The Bhai" alt="Tiger The Bhai"></div>
+                <div class="app-name">Tiger The Bhai</div>
+                <div class="apps-links" >
+                  <div class="apps-link"><a class="apps-link-j2me" href="http://store.ovi.com/content/304106?clickSource=search&pos=1" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">This game is published by Jump Games. (Tiger, a secret agent, is out to find and rescue his lady love. Time is running out; Will Tiger rescue his Lover?)...</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/twistedmachines-motomadness.png" alt="Twisted Machines MotoMadness" class="app_img"> </div>
+            <div class="title">
+              <h4>Twisted Machines MotoMadness</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/twistedmachines-motomadness.png"  title="Twisted Machines MotoMadness" alt="Twisted Machines MotoMadness"></div>
+                <div class="app-name">Twisted Machines MotoMadness</div>
+                <div class="apps-links" >
+                  <div class="apps-link"><a class="apps-link-j2me" href="http://store.ovi.com/content/269387?clickSource=search&pos=1" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Get ready for some two wheeled madness with Twisted Machines Moto Madness. Ride in exotica and abstract locales as you chase the end of the line. Dodge the cops, barricades and make sure you show your opponent who is the King of the Road.</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/twistedmachines-motoracing.png" alt="TwistedMachines Moto Racing" class="app_img"> </div>
+            <div class="title">
+              <h4>TwistedMachines Moto Racing</h4>
+            </div>
+            <div class="appPopUp_div app_correct2 app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/twistedmachines-motoracing.png"  title="TwistedMachines Moto Racing" alt="TwistedMachines Moto Racing"></div>
+                <div class="app-name">TwistedMachines Moto Racing</div>
+                <div class="apps-links" >
+                  <div class="apps-link"><a class="apps-link-j2me" href="http://store.ovi.com/content/277457?clickSource=search&pos=1" target="_blank"></a> </div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Get ready for some two wheeled racing with Twisted Machines Moto Racing. Ride in exotica and abstract locales as you chase the end of the line. </div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/warofspecies.png" alt="War of the Species" class="app_img"> </div>
+            <div class="title">
+              <h4>War of the Species</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open rightside">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/warofspecies.png"  title="War of the Species" alt="War of the Species"></div>
+                <div class="app-name">War of the Species</div>
+                <div class="apps-links" >
+                  <div class="apps-link"><a class="apps-link-j2me" href="http://store.ovi.com/content/360198?clickSource=search&pos=1" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">In the not so near future, various species have evolved on earth. Each is trying to prove their supremacy. All the leaders have decided for a final face-off between the best warriors of each species. You have been selected to represent humanity...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="appstoreWrapper">
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/iccworldsrilanka-2012.png" alt="ICC WorldT20SriLanka2012" class="app_img"> </div>
+            <div class="title">
+              <h4>ICC WorldT20SriLanka2012 Free</h4>
+            </div>
+            <div class="appPopUp_div app_correct app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/iccworldsrilanka-2012.png"  title="ICC WorldT20SriLanka2012" alt="ICC WorldT20SriLanka2012"></div>
+                <div class="app-name">ICC WorldT20SriLanka2012</div>
+                <div class="apps-links" >
+                  <div class="apps-link"><a class="apps-link-j2me" href="http://store.ovi.com/content/365512?clickSource=search&pos=3" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Be a part of a world class series with the all enthralling Tournament Mode Experience the passion, walk down the pitch to a billion cheers and play the larger than life ICC World Twenty20 2012. . . </div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/indvsaus-2013.png" alt="IND vs AUS 2013" class="app_img"> </div>
+            <div class="title">
+              <h4>IND vs AUS 2013</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/indvsaus-2013.png"  title="IND vs AUS 2013" alt="IND vs AUS 2013"></div>
+                <div class="app-name hd_appName">IND vs AUS 2013</div>
+                <div class="apps-links noMar_padd" >
+                  <div class="apps-link"><a class="apps-link-j2me" href="http://store.ovi.com/content/427545?clickSource=search&pos=1" target="_blank"></a> </div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Will the Australia get their revenge for getting knocked out of the World Cup or will India repeat history by prevailing once more. Choose your side and take on the opponent team in two different modes of play. Which side are you on... </div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/krishna-aur-kans.png" alt="Krishna aur Kans" class="app_img"> </div>
+            <div class="title">
+              <h4>Krishna aur Kans</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/krishna-aur-kans.png"  title="Krishna aur Kans" alt="Krishna aur Kans"></div>
+                <div class="app-name">Krishna aur Kans</div>
+                <div class="apps-links" >
+                  <div class="apps-link"><a class="apps-link-j2me" href="http://store.ovi.com/content/299393?clickSource=search&pos=1" target="_blank"></a> </div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">This game is published by Jump Games. Help Krishna save the kids by killing the demons. Download now!
+                  Disclaimer: This software is not owned or developed by Nokia...</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/kumbhkaran-poppingmania.png" alt="Kumbh Karan Popping Mania" class="app_img"> </div>
+            <div class="title">
+              <h4>Kumbh Karan Popping Mania</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/kumbhkaran-poppingmania.png"  title="Kumbh Karan Popping Mania" alt="Kumbh Karan Popping Mania"></div>
+                <div class="app-name">Kumbh Karan Popping Mania</div>
+                <div class="apps-links" >
+                  <div class="apps-link"><a class="apps-link-j2me" href="http://store.ovi.com/content/256262?clickSource=search&pos=1" target="_blank"></a> </div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">A fun casual archery game where you play as Karan, and use the bow and arrows to pop the balloons. Some balloons will give you a special bonus while some will get your score down. Use your arrows wisely as the number of arrows are limited! </div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/wordhunt2.png" alt="Word Hunt 2" class="app_img"> </div>
+            <div class="title">
+              <h4>Word Hunt 2</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open rightside">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/wordhunt2.png"  title="Word Hunt 2" alt="Word Hunt 2"></div>
+                <div class="app-name">Word Hunt 2</div>
+                <div class="apps-links" >
+                  <div class="apps-link"><a class="apps-link-j2me" href="http://store.ovi.com/content/251477?clickSource=search&pos=1" target="_blank"></a> </div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Challenge your Word Power and Speed in Word Hunt 2, the sequel to the highly successful Word Hunt – the word search game. Have fun with new and unusual words by finding all the Hidden words.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="appstoreWrapper">
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/zapak.png" alt="ZAPAK" class="app_img"> </div>
+            <div class="title">
+              <h4>ZAPAK</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/zapak.png"  title="ZAPAK" alt="ZAPAK"></div>
+                <div class="app-name">ZAPAK</div>
+                <div class="apps-links" >
+                  <div class="apps-link"><a class="apps-link-j2me" href="http://store.ovi.com/content/387289?clickSource=search&pos=1" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Zapak App offers you the ability to download and play unlimited games on your phone. Yes you read it right, you have access to the entire catalog of games. No limit on the number of games...</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/ninjastrike.png" alt="Ninja Strike" class="app_img"> </div>
+            <div class="title">
+              <h4>Ninja Strike</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/ninjastrike.png"  title="Ninja Strike" alt="Ninja Strike"></div>
+                <div class="app-name">Ninja Strike</div>
+                <div class="apps-links" >
+                  <div class="apps-link"><a class="apps-link-j2me" href="http://store.ovi.com/content/227033?clickSource=search&pos=1" target="_blank"></a> </div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">A fun and casual game where you run up the walls jumping from side to side to avoid the obstacles and to kill the enemies. Face some of the craziest enemies. Kill 3 enemies of the same type to get some wacky power. . . </div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/ninjastrike2-dragonwarrior.png" alt="Ninja Strike 2 Dragon Warrior" class="app_img"> </div>
+            <div class="title">
+              <h4>Ninja Strike 2 Dragon Warrior</h4>
+            </div>
+            <div class="appPopUp_div app_correct2 app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/ninjastrike2-dragonwarrior.png"  title="Ninja Strike 2 Dragon Warrior" alt="Ninja Strike 2 Dragon Warrior"></div>
+                <div class="app-name hd_appName">Ninja Strike 2 Dragon Warrior</div>
+                <div class="apps-links noMar_padd" >
+                  <div class="apps-link"><a class="apps-link-j2me" href="http://store.ovi.com/content/363521?clickSource=search&pos=1" target="_blank"></a> </div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Help ninja in his quest to defeat dragons, ice monsters and other enemies. Run up the hill and jump from side to side to avoid obstacles and kill enemies. Be wary of some dangerous enemies. . . </div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/secretpoliceforce-dragonfly.png" alt="SecretPoliceForceDragonFly" class="app_img"> </div>
+            <div class="title">
+              <h4>SecretPoliceForceDragonFly</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/secretpoliceforce-dragonfly.png"  title="SecretPoliceForceDragonFly" alt="SecretPoliceForceDragonFly"></div>
+                <div class="app-name"  style="word-wrap:break-word; width:133px">SecretPoliceForceDragonFly</div>
+                <div class="apps-links" >
+                  <div class="apps-link"><a class="apps-link-j2me" href="http://store.ovi.com/content/366076?clickSource=search&pos=1" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">The Rebel militants have taken lots of innocent civilians hostage. Their territory is out of bounds for the Official government forces to act upon. Hence, the Secret Police force is called into action...</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/shaktimaan.png" alt="Shaktimaan" class="app_img"> </div>
+            <div class="title">
+              <h4>Shaktimaan</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open rightside">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/shaktimaan.png"  title="Shaktimaan" alt="Shaktimaan"></div>
+                <div class="app-name">Shaktimaan</div>
+                <div class="apps-links" >
+                  <div class="apps-link"><a class="apps-link-j2me" href="http://store.ovi.com/content/366022?clickSource=search&pos=1" target="_blank"></a> </div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">The time has come to protect the citizens of Indus city from Kilvish’s evil plans. Play as the first Indian Superhero Shaktimaan and destroy the enemies by blasting them to oblivion. . . </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="virtualpage hidepiece" id="fifthPage">
+        <div class="appstoreWrapper">
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/pirate-fairy-legend.png" alt="Pirate Fairy Legend"> </div>
+            <div class="title">
+              <h4>Pirate Fairy Legend</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="Pirate Fairy Legend" title="Pirate Fairy Legend" src="gambar/karya/pirate-fairy-legend.png"></div>
+                <div class="app-name">Pirate Fairy Legend</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a target="_blank" href="https://itunes.apple.com/in/app/id842126213?mt=8" class="apps-link-itunes"></a><a target="_blank" href="https://play.google.com/store/apps/details?id=com.codeartis.pfl&referrer=" class="apps-link-play"></a> </div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Aaaaaaaarg.....Time to sharpen your matching skills with Pirate Fairy Legend. Sail your way along the Sword Coast by matching 3 or more magic vials.
+                  Solve the mystery that plagues these waters and restore balance to the land. Pirate and hoard all the treasure you can to give you access to boosters.
+                  Beware... The ever changing gravity will make your quest ever more challenging...</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/jungle_chaos.png" alt="Jungle Chaos" > </div>
+            <div class="title">
+              <h4>Jungle Chaos</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img  title="Jungle Chaos" src="gambar/karya/jungle_chaos.png" alt="Jungle Chaos"/></div>
+                <div class="app-name">Jungle Chaos</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a target="_blank" href="https://apps.facebook.com/junglechaos/" class="apps-link-facebook"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Jungle Chaos is a side scrolling Jump-n-Run game. It has both single player and multi-player mode. Set in jungle, you play as a monkey. Compete with your Facebook friends and share your score on your wall. . .</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/kalemat.png" alt="Kalemat" class="app_img"> </div>
+            <div class="title">
+              <h4>Kalemat</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/kalemat.png"  title="Kalemat" alt="Kalemat"></div>
+                <div class="app-name">Kalemat</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a class="apps-link-play" href="https://play.google.com/store/apps/details?id=com.myhybridapps.kalemat" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Kalemat is the first crossword game that supports both languages (Arabic & English), it consists of 34 levels (Shapes, Sport, Business, Law, etc...), each level can be played in Arabic, English or mixed mode (words will be presented in one language...</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/license_parking.png" alt="license for parking" class="app_img"> </div>
+            <div class="title">
+              <h4>License for Parking</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/license_parking.png"  title="License for Parking" alt="License for Parking"></div>
+                <div class="app-name">License for Parking</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a class="apps-link-play" href="https://play.google.com/store/apps/details?id=com.underdogsthestudio.licenseparking&hl=en"target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">License Parking is a car parking game. Its size is small; its 2D graphics are very beautiful and smooth! Just as playing other car parking games, your target is to park your car into the given places. . .</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/monster_coloring_book.png" alt="Monster Coloring Book" > </div>
+            <div class="title">
+              <h4>Monster Coloring Book</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open rightside">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="Monster Coloring Book" title="Monster Coloring Book" src="gambar/karya/monster_coloring_book.png"></div>
+                <div class="app-name">Monster Coloring Book</div>
+                <div class="apps-links">
+                  <div class="apps-link"> <a target="_blank" href="https://itunes.apple.com/us/app/monster-colouring-book/id847302917?mt=8" class="apps-link-itunes"></a> <a target="_blank" href="https://play.google.com/store/apps/details?id=com.templatemagician.monstercoloringbook" class="apps-link-play"></a> <a target="_blank" href="http://www.amazon.com/Template-Magician-Inc-Monster-Coloring/dp/B00JEAE5A8/ref=sr_1_2?s=mobile-apps&ie=UTF8&qid=1407826556&sr=1-2&keywords=template+magician" class="apps-link-amazon"></a> </div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Look out! Those scaly, claws, furry, horned, fanged monsters have crawled out from under the bed and onto your mobile device! But these aren’t up to any mischief; they’re just here to get some color. Your kids will enjoy bringing these kooky monsters to life in this FREE coloring book app.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="appstoreWrapper">
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/monsterup-candy-run.png" alt="MonsterUp Candy Run"> </div>
+            <div class="title">
+              <h4>MonsterUp Candy Run</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open ">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="MonsterUp Candy Run" title="MonsterUp Candy Run" src="gambar/karya/monsterup-candy-run.png"></div>
+                <div class="app-name">MonsterUp Candy Run</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a target="_blank" href="http://www.windowsphone.com/en-us/store/app/monsterup-candy-run/bdb811e1-54f7-4657-9642-bc4d7d675e87" class="apps-link-windows"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">MonsterUp Candy Run takes the beloved Monsters high above Trelloland and through fun and awesome training courses! Avoid the obstacles, gather gems and powerups, jump and fly but whatever you do, don't fall! . . .</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/numtris.png" alt="Numtris ( Number game )"> </div>
+            <div class="title">
+              <h4>Numtris ( Number game )</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="Numtris ( Number game )" title="Numtris ( Number game )" src="gambar/karya/numtris.png"></div>
+                <div class="app-name">Numtris<br>
+                  ( Number game )</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a target="_blank" href="https://play.google.com/store/apps/details?id=com.DrJohn.Numtris" class="apps-link-play"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Do you remember Tetris? A game that you probably played in childhood? And now it is time to continue the world-famous game! Meet the "Numtris"!<br>
+                  Numtris - a game for persons who like spend some quiet time and take a little time-out from the daily routine! Numtris allows you to immerse yourself in the gameplay and to develop your math skills ! The game will impress you by its simplicity...</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/nuts-candies.png" alt="Nuts & Candies"> </div>
+            <div class="title">
+              <h4>Nuts & Candies</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="Nuts & Candies" title="Nuts & Candies" src="gambar/karya/nuts-candies.png"></div>
+                <div class="app-name">Nuts & Candies</div>
+                <div class="apps-links">
+                  <div class="apps-link"> <a target="_blank" href="http://www.windowsphone.com/en-us/store/app/nuts-candies/cc567533-67b3-441d-a851-1d0563d201f7" class="apps-link-windows"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">This is time pass game. It is expanded version of very known game tic tac toe...</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/water_scoot.png" alt="Jet Sky Race Water Scoot"> </div>
+            <div class="title">
+              <h4>Jet Ski Race:Water Scoot</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open ">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="Jet Sky Race:Water Scoot" title="Jet Sky Race:Water Scoot" src="gambar/karya/water_scoot.png"></div>
+                <div class="app-name">Jet Sky Race:Water Scoot</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a target="_blank" href="https://play.google.com/store/apps/details?id=com.iyanagames.WaterScoot" class="apps-link-play"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Have you ever dreamed of riding a personal watercraft ...? Here is your chance , put on your life jackets and jump in .. Get ready to feel the thrill . . .</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/platformer.png" alt="Platformer" class="app_img"> </div>
+            <div class="title">
+              <h4>Platformer</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open rightside">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/platformer.png"  title="World of Brains" alt="World of Brains"></div>
+                <div class="app-name">Platformer</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a class="apps-link-windows" href="http://www.windowsphone.com/en-in/store/app/platformer/16cf4b08-25d5-4e94-b500-83970aa8549b" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">In Platformer user has to collect maximum gold coins in minimum time. In Game:5 interestating levels, Leaderboards(Global and Facebook friends), You can send messages to your facebook freinds, Used our cloud service App42 . . .</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="appstoreWrapper">
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/pobble.png" alt="Pobble"> </div>
+            <div class="title">
+              <h4>Pobble</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open ">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="Pobble" title="Pobble" src="gambar/karya/pobble.png"></div>
+                <div class="app-name">Pobble</div>
+                <div class="apps-links">
+                  <div class="apps-link"> <a target="_blank" href="https://play.google.com/store/apps/details?id=com.doofah.pobble" class="apps-link-play"></a> </div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">A fun side-scrolling game in the vein of popular retro classics - easy to play, but difficult to master!
+                  
+                  Pobble's pleasing aesthetics, intuitive gameplay mechanics and simple control system ensure it's accessible to all...</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/quick.png" alt="Quick Worker" class="app_img"> </div>
+            <div class="title">
+              <h4>Quick Worker</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/quick.png"  title="Quick Worker" alt="Quick Worker"></div>
+                <div class="app-name">Quick Worker</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a class="apps-link-play" href="https://play.google.com/store/apps/details?id=com.happy4game.quickworker.free" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Have you ever dreamed of riding a personal watercraft ...? Here is your chance , put on your life jackets and jump in ..
+                  Get ready to feel the thrill . . .</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/race_city_delhi.png" alt="Race City Delhi"> </div>
+            <div class="title">
+              <h4>Race City Delhi</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="Race City Delhi" title="Race City Delhi" src="gambar/karya/race_city_delhi.png"></div>
+                <div class="app-name">Race City Delhi</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a target="_blank" href="https://play.google.com/store/apps/details?id=com.mango.RaceCityDelhi" class="apps-link-play"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Loksabha Elections for India is around the corner. As India gears up for its elections’ drive, show off your driving skill, style and showmanship.! You are in for the ride of better cause.</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/raining_blob.png" alt="Raining Blobs" class="app_img"> </div>
+            <div class="title">
+              <h4>Raining Blobs</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/raining_blob.png"  title="Raining Blobs" alt="Raining Blobs"></div>
+                <div class="app-name">Raining Blobs</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a class="apps-link-windows" href="http://www.windowsphone.com/en-us/store/app/raining-blobs/2ca1825a-c015-4c08-bd20-c228cb6c4654" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Addictive and challenging tetris-like, retro style, arcade, puzzle game where you have to group blobs by color and clear them by adding two same color stars.</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/smart_paint.png" alt="Smart Photo Paint" > </div>
+            <div class="title">
+              <h4>Smart Photo Paint</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open rightside">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="Smart Paint" title="Smart Paint" src="gambar/karya/smart_paint.png"></div>
+                <div class="app-name">Smart Paint</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a target="_blank" href="http://store.ovi.com/content/386367?clickSource=publisher+channel&amp;channel=&amp;pos=1" class="apps-link-j2me"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">This Smart Paint App turns your phone into a pocket note writer or sketch pad. It enables you to quickly hand written notes &amp; draw creative fun toons on the go and save them as JPEG paint images. . .</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="appstoreWrapper">
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/smart_scan.png" alt="Smart Photo Scan" class="app_img"> </div>
+            <div class="title">
+              <h4>Smart Photo Scan</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/smart_scan.png"  title="Smart Photo Scan" alt="Smart Photo Scan"></div>
+                <div class="app-name">Smart Photo Scan</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a class="apps-link-j2me" href="http://store.ovi.com/content/386216?clickSource=publisher+channel&channel=&pos=12" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">This is an Unique and Exiting App. The Smart Scan App turns your phone into pocket image scanner. It enables you to quickly photo scan your friends, sceneries & documents on the go as JPEG image.</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/snap_studio.png" alt="snap studio" > </div>
+            <div class="title">
+              <h4>Snap Studio</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="Snap Studio" title="Snap Studio" src="gambar/karya/snap_studio.png"></div>
+                <div class="app-name">Snap Studio</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a target="_blank" href="http://store.ovi.com/content/379521" class="apps-link-j2me"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Snap Studio is a powerful photo editor to meet your photo editing needs.It has quick and easy way to edit your photos on the go with no fuss.It comes loaded with some beautiful photo effects. . .</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/space-miner.png" alt="Space Miner"> </div>
+            <div class="title">
+              <h4>Space Miner</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open ">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="Space Miner" title="Space Miner" src="gambar/karya/space-miner.png"></div>
+                <div class="app-name">Space Miner</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a target="_blank" href="https://play.google.com/store/apps/details?id=com.me.spaceminer" class="apps-link-play"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Buy a spaceship, outfit it and plan provisions for an interplanetary voyage in a solar system with Newtonian physics. Land on distant planets, mine minerals and sell them back home. You have one year to make your fortune, can you get a place on the global highscore? . . .</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/tarneeb-full.png" alt="Tarneeb Full"> </div>
+            <div class="title">
+              <h4>Tarneeb Full</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="Tarneeb Full" title="Tarneeb Full" src="gambar/karya/tarneeb-full.png"></div>
+                <div class="app-name">Tarneeb Full</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a target="_blank" href="https://play.google.com/store/apps/details?id=com.Tarneeb" class="apps-link-play"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">The #1 played game in the Middle East and even outside the Middle East.
+                  Tarneeb, Tarnib, or even Trumps is a hearts like game. the game is played in teams and the winner team has to win the bid or break the other team bid. Very addictive game and a great one to kill some time anywhere you are. This app allows you to play up to score of 31 or 61 as many as you want and it has:<br>
+                  - Single mode<br>
+                  - Online Mode<br>
+                  - LeaderBoard for both single and online modes</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/tarneeb-lite.png" alt="Tarneeb Lite"> </div>
+            <div class="title">
+              <h4>Tarneeb Lite</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open rightside">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="Tarneeb Lite" title="Tarneeb Lite" src="gambar/karya/tarneeb-lite.png"></div>
+                <div class="app-name">Tarneeb Lite</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a target="_blank" href="https://play.google.com/store/apps/details?id=com.Tarneeb.Lite" class="apps-link-play"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">** Please note that this is Lite version (limited functionality with ads in the form of notifications/icons) **
+                  The #1 played game in the Middle East and even outside the Middle East.
+                  Tarneeb, Tarnib, or even Trumps is a hearts like game. the game is played in teams and the winner team has to win the bid or break the other team bid. Very addictive game and a great one to kill some time anywhere you are.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="virtualpage hidepiece" id="sixth">
+        <div class="appstoreWrapper">
+          <div class="app_store">
+            <div class="img"> <img title="JACKPOT Solitaire" class="app_img" src="gambar/karya/jackpot_slitair.png" alt="JACKPOT Solitaire" > </div>
+            <div class="title">
+              <h4>JACKPOT Solitaire</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon right"><img title="JACKPOT Solitaire" src="gambar/karya/jackpot_slitair.png" alt="JACKPOT Solitaire" ></div>
+                <div class="app-name">JACKPOT Solitaire</div>
+                <div class="apps-links noMar_padd">
+                  <div class="apps-link"><a target="_blank" href="https://apps.facebook.com/jackpot_solitaire/" class="apps-link-facebook"></a> <a target="_blank" href="http://www.bigfishgames.com/online-games/24347/jackpot-solitaire/index.html" class="apps-link-big-fish"></a> </div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Love solitaire and slots? Why pick one when you can play both at the same time! String together insane card matching combos, spin the reels, win awesome power-ups, and hit the jackpot today in the new king of card games: JACKPOT Solitaire!</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/m24-maghreb.png" alt="M24 Al-Aqaria Live"> </div>
+            <div class="title">
+              <h4>M24 Al-Aqaria Live</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="M24 Al-Aqaria Live" title="M24 Al-Aqaria Live" src="gambar/karya/m24-maghreb.png"></div>
+                <div class="app-name">M24 Al-Aqaria Live</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a target="_blank" href="https://play.google.com/store/apps/details?id=com.maghreb24.AqariaLive" class="apps-link-play"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">M24 TV Al Aqaria est la nouvelle chaine qui s’ajoute à notre bouquet Maghreb 24 TV.
+                  Cette chaine sera consacrée au secteur de l’immobilier sur le grand Maghreb et le Moyen-Orient.
+                  Que vous soyez vendeur...</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/funb3rs.png" alt="Funb3rs"> </div>
+            <div class="title">
+              <h4>Funb3rs</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="Funb3rs" title="Funb3rs" src="gambar/karya/funb3rs.png"></div>
+                <div class="app-name">Funb3rs</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a target="_blank" href="https://play.google.com/store/apps/details?id=com.mixelweb.funb3rs" class="apps-link-play"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Funb3rs: the latest social game to challenge your friends and have fun with numbers!
+                  
+                  You just have to reach the given Target Number, swiping your finger on the screen to add up caught digits.
+                  Each time you get it, a new one will appear, and so on...</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/game_one_thousand.png" alt="Game of One Thousand" class="app_img"> </div>
+            <div class="title">
+              <h4>Game of One Thousand</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/game_one_thousand.png"  title="Game of One Thousand" alt="Game of One Thousand"></div>
+                <div class="app-name">Game of One Thousand</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a class="apps-link-play" href="https://play.google.com/store/apps/details?id=com.esh0.gameofonethousand" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Rules of the game (2 players), each player receives 10 cards on the table, there are two musts two cards. Playing after the auction selects one of musików, makes it into their pocket cards, then discards two of his cards on the table (also covered). . . </div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/hues-game-threes-powered-up.png" alt="Hues - Threes & 2048 Powered up!" class="app_img"> </div>
+            <div class="title">
+              <h4>Hues - Threes & 2048 Powered up!</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open rightside">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/hues-game-threes-powered-up.png"  title="Hues - Threes & 2048 Powered up" alt="Hues - Threes & 2048 Powered up!"></div>
+                <div class="app-name">Hues - Threes & 2048 Powered up! </div>
+                <div class="apps-links">
+                  <div class="apps-link"><a class="apps-link-play" href="https://play.google.com/store/apps/details?id=com.refocuslabs.hues" target="_blank"></a></div>
+                  <div class="apps-link"><a class="apps-link-bb" href="http://appworld.blackberry.com/webstore/content/51907888/?countrycode=IN&lang=en" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Hues is puzzle card game inspired by Threes and 2048. By merging cards of the same color (hue), you earn points and unlock more hues! The objective is simple: To score as much as you can by merging more and more cards, called as "Hues". As you unlock higher ranked "Hues", the game adapts to that! It's a colorful experience! . . . </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="appstoreWrapper">
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/brain_zombies.png" alt="Brain vs Zombies" class="app_img"> </div>
+            <div class="title">
+              <h4>Brainbots vs Zombies</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/brain_zombies.png"  title="Brain vs Zombies" alt="Brain vs Zombies"></div>
+                <div class="app-name">Brainbots vs Zombies</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a class="apps-link-play" href="https://play.google.com/store/apps/details?id=com.zapak.brainbotsvszombies.main" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">A casual arcade game that takes place in the post zombie apocalyptic future. The Zombie herd is advancing towards the last settlement of the brains. Tired of running for so long, the brains have decided to stay put and make a stand against the advancing zombies! . . . </div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/dots-master.png" alt="Dots Master" > </div>
+            <div class="title">
+              <h4>Dots Master</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="Dots Master" title="Dots Master" src="gambar/karya/dots-master.png"></div>
+                <div class="app-name">Dots Master</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a target="_blank" href="http://www.windowsphone.com/en-us/store/app/dots-master/ba77c950-6e22-4fa9-bb49-bf9616bc63a8" class="apps-link-windows"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">A revolutionary version for the classic Dots & Boxes game!<br>
+                  Dots & Boxes is a simple to learn yet very complex puzzle game for two players. In each turn, the active player draws a line on an empty grid of dots, trying to complete a square...</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/mountain-climb.png" alt="Mountain Climb Hill Racing"> </div>
+            <div class="title">
+              <h4>Mountain Climb Hill Racing</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="Mountain Climb Hill Racing" title="Mountain Climb Hill Racing" src="gambar/karya/mountain-climb.png"></div>
+                <div class="app-name">Mountain Climb Hill Racing</div>
+                <div class="apps-links">
+                  <div class="apps-link"> <a target="_blank" href="https://play.google.com/store/apps/details?id=com.vg.mountainclimb" class="apps-link-play"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Start upgrading your cars in order to perform awesome stunts and risk it all with this awesome hill racing game. We got all kinds of vehicles waiting for you to conquer even the most challenging tracks. It doesn’t matter if you are looking for easy kid racing games or an endless hill climb game, this is real racing for man and woman...</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img alt="Servesy - Reliable Services" src="gambar/karya/servesy.png" class="app_img"> </div>
+            <div class="title">
+              <h4>Servesy - Reliable Services</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open rightside">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/servesy.png" title="Servesy - Reliable Services" alt="Servesy - Reliable Services"></div>
+                <div class="app-name">Servesy - Reliable Services</div>
+                <div class="apps-links">
+                  <div class="apps-link"> <a class="apps-link-play" href="https://play.google.com/store/apps/details?id=com.servesy" target="_blank"></a> </div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">A one touch booking app for 20+ Housekeeping Services. Our pre-validated technicians are reliable and assure on-time service at your doorstep. Now you can book Electrician, Plumber, Carpenter, Home Cleaning, Washroom Cleaning, Pest Control, Gardening, Car Washing, Cobbler, Computer Repair, Electronics Repair, Water Filtering...</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/baw-rush.png" alt="BAW Rush"> </div>
+            <div class="title">
+              <h4>BAW Rush</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open rightside">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="BAW Rush" title="BAW Rush" src="gambar/karya/baw-rush.png"></div>
+                <div class="app-name">BAW Rush</div>
+                <div class="apps-links">
+                  <div class="apps-link"> <a target="_blank" href="http://java.apps.opera.com/en_in/baw_rush.html" class="apps-link-opera"> </a> </div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">The most entertaining circus of all time, Jumbo Circus, has now been captivated by Jackie, the magician. Help Alex to overcome the odds and save the animals, jokers and most importantly his father, Paul, who has been running the circus for years. Chase Jackie’s gang and rescue Circus.The magician has worked his magic and has turned the city into an achromatic world...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="appstoreWrapper">
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/awale.png" alt="Awale" > </div>
+            <div class="title">
+              <h4>Awale</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img title="Awale" src="gambar/karya/awale.png" alt="Awale" ></div>
+                <div class="app-name">Awale</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a target="_blank" href="http://www.windowsphone.com/en-us/store/app/awale/80afd711-1a83-4a42-bdd5-4d0cf6a3a094" class="apps-link-windows"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">AWALE is one of the oldest games in the world. It dates back to the 5th century A.D. and it is nowadays played all around Africa. The rules of Awale are very simple, and the game is easy to understand. . .</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/road-trip-hill-climb-racer.png" alt="Road Trip Hill Climb Racer" > </div>
+            <div class="title">
+              <h4>Road Trip Hill Climb Racer</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="Road Trip Hill Climb Racer" title="Road Trip Hill Climb Racer" src="gambar/karya/road-trip-hill-climb-racer.png"></div>
+                <div class="app-name">Road Trip Hill Climb Racer</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a target="_blank" href="https://play.google.com/store/apps/details?id=com.vg.RoadTripHillClimbRacer" class="apps-link-play"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Get ready for new cars a real racing game that will take you all over the world! Road Trip Hill Climb Racer offers you the best racing experience found on android. Drive fast see every race as a time trial, this means it is all about speed racing and getting as far as possible in the quickest time. ...</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/racing-cars-outlaw-run.png" alt="Racing Cars - Outlaw Run 3D" > </div>
+            <div class="title">
+              <h4>Racing Cars - Outlaw Run 3D</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="Racing Cars - Outlaw Run 3D" title="Racing Cars - Outlaw Run 3D" src="gambar/karya/racing-cars-outlaw-run.png"></div>
+                <div class="app-name">Racing Cars - Outlaw Run 3D</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a target="_blank" href="https://play.google.com/store/apps/details?id=com.vg.outlawrun3d" class="apps-link-play"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Burn rubber, and don’t look back!
+                  Hear the mighty sounds of engines roaring, take the wheel in your hands and hit the asphalt with Racing Cars - Outlaw Run 3D. Experience racing in the most exciting form, make your way through the traffic...</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/texas42.png" alt="Texas 42" > </div>
+            <div class="title">
+              <h4>Texas 42</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="Texas 42" title="Texas 42" src="gambar/karya/texas42.png"></div>
+                <div class="app-name">Texas 42</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a target="_blank" href="https://play.google.com/store/apps/details?id=com.maroonentertainment.Texas42" class="apps-link-play"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Welcome to the Official State Domino game of Texas! Texas 42 is a trick taking game similar to bridge or spades. Invented in the late 1880s, it has become a tradition across generations of players...</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/aeroplane-coloring-book.png" alt="Aeroplane Coloring Book" > </div>
+            <div class="title">
+              <h4>Aeroplane Coloring Book</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open rightside">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="Aeroplane Coloring Book" title="Aeroplane Coloring Book" src="gambar/karya/aeroplane-coloring-book.png"></div>
+                <div class="app-name">Aeroplane Coloring Book</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a target="_blank" href="https://play.google.com/store/apps/details?id=com.templatemagician.aeroplanecoloringbook&hl=en" class="apps-link-play"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Hop into the cockpit of the fascinating world of jets and airplanes and take off into the skies with this. FREE coloring book app! Young children will be captivated for hours adding color to the various aircrafts ...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="appstoreWrapper">
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/swings-copter.png" alt="Swings Copter" > </div>
+            <div class="title">
+              <h4>Swings Copter</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="Swings Copter" title="Swings Copter" src="http://appwarp.shephertz.com/wp-content/themes/twentytwelve/images/showcase/2014/swings-copter.png"></div>
+                <div class="app-name">Swings Copter</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a target="_blank" href="http://www.windowsphone.com/en-us/store/app/swings-copter/07c06284-3ba7-4909-aaee-c7890a2492ca" class="apps-link-windows"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Flying with a propeller hat is not as easy as it looks.<br>
+                  [HOW TO PLAY]<br>
+                  • Tap to change direction. <br>
+                  • Get 4 medals to unlock more characters.<br>
+                  Enjoy the game...</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/kooky-troop.png" alt="Kooky Troop" > </div>
+            <div class="title">
+              <h4>Kooky Troop</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="Kooky Troop" title="Kooky Troop" src="gambar/karya/kooky-troop.png"></div>
+                <div class="app-name">Kooky Troop</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a target="_blank" href="http://www.windowsphone.com/en-us/store/app/kooky-troop/bc010f58-c7df-4f79-aaee-d7ca2aa4ea34" class="apps-link-windows"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Foster, Play and Battle with the Kooky Troop!<br>
+                  Big on emotion and personality, these little creatures from another world will keep you entertained. They come in all shapes and sizes, each with it's own unique personality and needs!...</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/retro-league.png" alt="Retro League Javelin Throw" > </div>
+            <div class="title">
+              <h4>Retro League Javelin Throw</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="Retro League Javelin Throw" title="Retro League Javelin Throw" src="gambar/karya/retro-league.png"></div>
+                <div class="app-name">Retro League Javelin Throw</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a target="_blank" href="http://www.windowsphone.com/en-us/store/app/retro-league-javelin-throw/9e6a1427-be1f-4835-ad66-70acf387f5fd" class="apps-link-windows"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Bringing you the ultimate retro experience and a REAL sports game - RETRO LEAGUE JAVELIN THROW....</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/roly-poly-penguin.png" alt="Roly Poly Penguin" > </div>
+            <div class="title">
+              <h4>Roly Poly Penguin</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="Roly Poly Penguin" title="Roly Poly Penguin" src="gambar/karya/roly-poly-penguin.png"></div>
+                <div class="app-name">Roly Poly Penguin</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a target="_blank" href="http://www.windowsphone.com/en-us/store/app/roly-poly-penguin/926ef34f-92e6-4ddd-8419-2850e10f3ae2" class="apps-link-windows"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Hurry, catch as many fish as possible! Feed Pippo in a fun way to be the fattest Penguin in the world. Get the highest point to show your love to your penguin...</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/roly-poly-penguin.png" alt="Roly Poly Penguin" > </div>
+            <div class="title">
+              <h4>Roly Poly Penguin</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="Roly Poly Penguin" title="Roly Poly Penguin" src="gambar/karya/roly-poly-penguin.png"></div>
+                <div class="app-name">Roly Poly Penguin</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a target="_blank" href="http://www.windowsphone.com/en-us/store/app/roly-poly-penguin/926ef34f-92e6-4ddd-8419-2850e10f3ae2" class="apps-link-windows"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Hurry, catch as many fish as possible! Feed Pippo in a fun way to be the fattest Penguin in the world. Get the highest point to show your love to your penguin...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="virtualpage hidepiece" id="last">
+        <div class="appstoreWrapper">
+          <div class="app_store">
+            <div class="img"> <img src="gambar/karya/golden-boot.png" alt="Golden Boot - Brazil 2014" class="app_img"> </div>
+            <div class="title">
+              <h4>Golden Boot - Brazil 2014</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img src="gambar/karya/golden-boot.png"  title="Golden Boot - Brazil 2014" alt="Golden Boot - Brazil 2014"></div>
+                <div class="app-name">Golden Boot - Brazil 2014</div>
+                <div class="apps-links">
+                  <div class="apps-link"> <a class="apps-link-itunes" href="https://itunes.apple.com/us/app/golden-boot/id867431594?mt=8" target="_blank"></a> <a class="apps-link-play" href="https://play.google.com/store/apps/details?id=com.AeonSparx.GoldenBoot" target="_blank"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Golden Boot (also known as Golden Shoe) was first awarded in 1930 for top goal scorer. It's an honour that every world best soccer player in the world would risk everything for....</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img title="Ludo Party" class="app_img" src="gambar/karya/ludo-party.png" alt="Ludo Party" > </div>
+            <div class="title">
+              <h4>Ludo Party</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon right"><img title="Ludo Party" src="gambar/karya/ludo-party.png" alt="Ludo Party" ></div>
+                <div class="app-name">Ludo Party</div>
+                <div class="apps-links noMar_padd">
+                  <div class="apps-link"> <a class="apps-link-itunes" href="https://itunes.apple.com/us/app/ludo-party/id837598248" target="_blank"></a> <a class="apps-link-play" href="https://play.google.com/store/apps/details?id=com.freeman.ludoparty&hl=en" target="_blank"></a> </div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Ludo Party is a game based on a well known Ludo board game. This board game also goes by many other names such as Pachisi, Parchís, Sorry, Chińczyk, Fia med knuff, Covece ne ljuti se, and many...</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img title="Ghost Blitz" class="app_img" src="gambar/karya/ghost-blitz.png" alt="Ghost Blitz" > </div>
+            <div class="title">
+              <h4>Ghost Blitz</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon right"><img title="Ghost Blitz" src="gambar/karya/ghost-blitz.png" alt="Ghost Blitz" ></div>
+                <div class="app-name">Ghost Blitz</div>
+                <div class="apps-links noMar_padd">
+                  <div class="apps-link"> <a class="apps-link-itunes" href="https://itunes.apple.com/us/app/ghost-blitz/id810294906?ls=1&mt=8" target="_blank"></a> <a class="apps-link-play" href="https://play.google.com/store/apps/details?id=air.com.terrainfinity.geistesblitz" target="_blank"></a> <a class="apps-link-amazon" href="http://www.amazon.com/gp/mas/dl/android?p=air.com.terrainfinity.geistesblitz" target="_blank"></a> </div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">The world-famous game “Ghost Blitz”, played by millions of people, is now available for the smartphone and tablet!<br>
+                  „Ghost Blitz“ is a game for all ages and for all occasions!...</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img title="wormholes" class="app_img" src="gambar/karya/wormholes.png" alt="wormholes" > </div>
+            <div class="title">
+              <h4>wormholes</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon right"><img title="wormholes" src="gambar/karya/wormholes.png" alt="wormholes" ></div>
+                <div class="app-name">wormholes</div>
+                <div class="apps-links noMar_padd">
+                  <div class="apps-link"> <a class="apps-link-play" href="https://play.google.com/store/apps/details?id=com.cityarts.wormhole&hl=en" target="_blank"></a> </div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Wormholes is a space arcade game where the player uses planetary gravity to save on fuel. Seek out wormholes and planets with fuel stations, avoid the other ships....</div>
+              </div>
+            </div>
+          </div>
+          <div class="app_store">
+            <div class="img"> <img class="app_img" src="gambar/karya/roly-poly-penguin.png" alt="Roly Poly Penguin" > </div>
+            <div class="title">
+              <h4>Roly Poly Penguin</h4>
+            </div>
+            <div class="appPopUp_div app_box">
+              <div class="apps-overlay apps-overlay-open">
+                <div class="closediv"></div>
+                <div class="apps-app-icon"><img alt="Roly Poly Penguin" title="Roly Poly Penguin" src="gambar/karya/roly-poly-penguin.png"></div>
+                <div class="app-name">Roly Poly Penguin</div>
+                <div class="apps-links">
+                  <div class="apps-link"><a target="_blank" href="http://www.windowsphone.com/en-us/store/app/roly-poly-penguin/926ef34f-92e6-4ddd-8419-2850e10f3ae2" class="apps-link-windows"></a></div>
+                </div>
+                <div class="clear"></div>
+                <div class="app-desc">Hurry, catch as many fish as possible! Feed Pippo in a fun way to be the fattest Penguin in the world. Get the highest point to show your love to your penguin...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </div>
+</div>      
+<!-- ##################################################   PAGINATION   ##################################################-->
+  <div class="clear"></div>
+      <div id="gallerypaginate" class="paginationstyle"><a href="#" rel="previous">Prev</a>
+          <span class="flatview"></span> <a href="#" rel="next">Next</a>
+      </div>
+
+  <script type="text/javascript">
+    var gallery=new virtualpaginate({piececlass:"virtualpage",piececontainer:"div",pieces_per_page:1,defaultpage:0,wraparound:false,persist:false});gallery.buildpagination(["gallerypaginate","gallerypaginate2"])
+  </script>
+<!-- #########################################    FOOTER    #########################################-->
+<br>
+<br>
+<br>
+   <footer class="inner">
+      <div class="container">
+         <div class="row">
+            <div class="footer-ribon">
+               <span>Extras</span>
+            </div>
+            <div class="col-md-2">
+               <h4>Apps dan Games</h4>
+               <hr>
+                  <ul class="list icons list-unstyled">
+                     <li><a href="https://play.google.com/store/apps/developer?id=Akakom+Dev+Center" target="_blank" rel="nofollow"><img alt="Akakom Dev Center Android Apps" src="images/google_play.png" class="mobile-apps"/></a></li>
+                     <li><a href="http://appworld.blackberry.com/webstore/vendor/71236" target="_blank" rel="nofollow"><img alt="Akakom Dev Center Blackberry Apps" src="images/blackberry_appworld.png" class="mobile-apps"/></a></li>
+                     <li><a href="https://marketplace.firefox.com/app/flappy-bee" target="_blank" rel="nofollow"><img alt="Akakom Dev Center Firefox Appa" src="images/firefox_marketplace.png" class="mobile-apps"/></a></li>
+                     <li><a href="http://www.windowsphone.com/en-us/search?q=akakom+dev+center" target="_blank" rel="nofollow"><img alt="Akakom Dev Center Windows Phone Apps" src="images/windows_store.png" class="mobile-apps"/></a></li>
+                  </ul>
+               </hr>
+            </div>
+            <div class="col-md-2">
+               <h4>About us</h4>
+               <hr>
+                  <ul class="list icons list-unstyled">
+                  <li><i class="icon icon-caret-right"></i> <a href="about/index.htm">Community</a></li>
+                  <li><i class="icon icon-caret-right"></i> <a href="about/about_team.htm">Team</a></li>
+                  <li><i class="icon icon-caret-right"></i> <a href="about/about_careers.htm">Careers</a></li>
+                  <li><i class="icon icon-caret-right"></i> <a href="about/about_privacy.htm">Privacy</a></li>
+                  <li><i class="icon icon-caret-right"></i> <a href="about/about_copyright.htm">Copyright</a></li>
+                  <li><i class="icon icon-caret-right"></i> <a href="about_disclaimer.htm">Disclaimer</a></li>
+               </ul>
+               </hr>
+            </div>
+            <div class="col-md-2">
+               <h4>Latest Tutorials</h4>
+               <hr>
+                  <ul class="list icons list-unstyled">
+                     <li><i class="icon icon-caret-right"></i> <a href="#">Unity Shader</a></li>
+                     <li><i class="icon icon-caret-right"></i> <a href="#">Corona SDK</a></li>
+                     <li><i class="icon icon-caret-right"></i> <a href="#">MongoDB</a></li>
+                     <li><i class="icon icon-caret-right"></i> <a href="#">WebworkSDK</a></li>
+                     <li><i class="icon icon-caret-right"></i> <a href="#">Android</a></li>
+                     <li><i class="icon icon-caret-right"></i> <a href="#">Ruby Rails</a></li>
+                  </ul>
+               </hr>
+            </div>
+            <div class="col-md-3">
+                  <div class="contact-details">
+                     <h4>Contact Us</h4>
+                     <hr>
+                        <ul class="contact">
+                           <li><p><i class="icon icon-map-marker"></i> <strong>Address:</strong><a href="#"> STMIK AKAKOM<br/> Jl Raya janti no 143 Yogyakarta, Indonesia</a></p></li>
+                           <li><p><i class="icon icon-envelope"></i> <strong>Email:</strong> <a href="mailto:contact@adc.akakom.ac.id"> contact@adc.akakom.ac.id</a></p></li>
+                           <li><p><i class="icon icon-dribbble"></i> <strong>Website:</strong> <a href="http://www.adc.akakom.ac.id/"> adc.akakom.ac.id</a></p></li>
+                        </ul>
+                     </hr>
+                  </div>
+
+                  <div class="social-icons">
+                     <ul class="social-icons">
+                        <li class="facebook"><a href="https://www.facebook.com/akakomdevcenter" target="_blank" data-placement="bottom" title="Akakom Dev Center @ Facebook">Facebook</a></li>
+                        <li class="twitter"><a href="http://www.twitter.com/akakomdevcenter" target="_blank" data-placement="bottom"  title="Akakom Dev Center @ Twitter">Twitter</a></li>
+                        <li class="rss"><a href="http://feeds.feedburner.com/akakomdevcenter" target="_blank" data-placement="bottom" title="Akakom Dev Center RSS">RSS</a></li>
+                     </ul>
+                  </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="footer-copyright">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-1">
+                  <a href="#" class="logo">
+                     <img alt="Akakom Dev Center" class="img-responsive" src="images/logo-footer.png">
+                  </a>
+               </div>
+               <div class="col-md-6">
+                  <p>&copy; Copyright 2014. All Rights Reserved.</p>
+               </div>
+               <div class="col-md-4">
+                  <nav id="sub-menu">
+                     <ul>
+                        <li><a href="http://www.adc.akakom.ac.id/about/tutorials_writing.htm">Write for us</a></li>
+                        <li><a href="http://www.adc.akakom.ac.id/about/faq.htm">FAQ's</a></li>
+                        <li><a href="http://www.adc.akakom.ac.id/about/about_helping.htm">Helping</a></li>
+                        <li><a href="http://www.adc.akakom.ac.id/about/contact_us.htm">Contact</a></li>
+                     </ul>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+<!-- #########################################    LIBRARY    #########################################-->
+<script type="text/javascript" src="theme/vendor/jquery.js"></script>
+<script type="text/javascript" src="theme/js/theme.js"></script>
+<script type="text/javascript" src="scripts/urchin.js"></script>
+<script type="text/javascript">
+      _uacct = "UA-232293-6";
+      urchinTracker();
+</script>
+<script type="text/javascript">
+      /* Function to translate the content */
+         function googleTranslateElementInit() {
+              new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                autoDisplay: false,    
+                gaTrack: true,
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+              }, 'translation_widget');
+            }
+            $(document).ready(function() {
+                var self = location.href;
+                filename = self.substring(self.lastIndexOf('.com')+5);
+                if( filename.lastIndexOf('.htm') == -1 ){
+                   filename = filename + "index.htm";
+                }
+                var linktext = $('.sidebar li a[href*= "' + filename + '"]').text();
+                if( linktext.length == 0 ){
+                    filename = $(".parent-file").text(); 
+                }
+                if( filename.lastIndexOf('whoiswho') != -1 ){
+                    return;
+                }
+                $('.sidebar li a[href*= "' + filename + '"]').css("color", "");
+                $('.sidebar li a[href*= "' + filename + '"]').css("background-color", "#d6d6d6");
+                if( $('.middle-col').height() < $('.sidebar').height() && (window.innerWidth > 991)){
+                     $('.middle-col').css("height", $('.sidebar').height() + 50 );
+                }
+            });
+</script>
+<script src="scripts/translate.google.com/elementa0d8.html?cb=googleTranslateElementInit"></script>
+</div>
+</body>
+</html>
